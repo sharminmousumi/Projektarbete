@@ -13,19 +13,60 @@
   .row {
     display: flex;
     flex-wrap: wrap;
+  }
     
     
-  
-  }
-  
-  /* Create four equal columns  */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  
+    main{
+        width:100%;
+        background-color: #1b1c20;
+        top:57px;
+        bottom:0px;
+        position: absolute;
+    }
+    .container{
+        width: 70%;
+        border-left:  1px solid rgb(95, 95, 95);
+        border-right: 1px solid rgb(95, 95, 95);
+        left:15%;
+        top:0px;
+        bottom:0px;
+        position: absolute;
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+        color:white;
+    }
+    .container-item {
+        border: 1px solid white;
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding:1em;
+        margin:1em;
+    }
+    .container-item div{
+        border: 1px solid red;
+        align-content:space-around;
+    }
+    .container-item div:first-child{
+        margin-bottom: 20px;
+        flex:2;
+        background-image:url(../img/pizza-3007395_960_720.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .container-item div:nth-child(2){
+        flex:1;
+        border:1px solid blue;
+    }
+
+    /* Create four equal columns  */
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+    
   .column img {
     margin-top: 8px;
     vertical-align: middle;
@@ -48,4 +89,3 @@
       max-width: 100%;
     }
   }
-  
