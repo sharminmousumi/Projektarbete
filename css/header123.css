@@ -1,4 +1,4 @@
-  *{
+*{
     margin:0;
     box-sizing: border-box;
     padding:0;
@@ -26,6 +26,9 @@ main{
     float:right;
     padding-right: 5px;
 }
+#hamburger-menu{
+    display:none;
+}
 .nav-bar{
     background-color: #1b1c20;
     font-size: 14px;
@@ -33,7 +36,6 @@ main{
 }
 .nav-bar-menu{
     display:flex;
-    align-items: center;
     width:70%;
     font-size: 1.2em;
     list-style: none;
@@ -66,22 +68,7 @@ main{
     color:white;
 }
 /*  sett width 100% width på nav-bar menu på alla bildskärmar mindre än desktop */
-@media only screen and (min-width:768px) and (max-width:1024px){
-    .nav-bar-menu{
-        width:100%;
-        font-size:1.8em;
-    }
-    .nav-list-item a{
-        padding:20px;
-    }
-    main{
-        top:69px;
-    }
-    #logo{
-        display:none;
-    }
-}
-@media only screen and (min-width:441px) and (max-width:767px){
+@media only screen and (min-width:441px) and (max-width:768px){
     .nav-bar-menu{
         width:100%;
     }
