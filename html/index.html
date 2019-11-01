@@ -21,6 +21,19 @@
                 <li class="nav-list-item"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <nav class="mobile-nav-bar">   
+            <a href="index.html">Home</a>     
+            <div id="mobile-links">
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </nav>
     </header>
     <main>
         <div class="container">
@@ -30,8 +43,18 @@
                 Our vision and goal is to create a simple way too order food, meanwhile we do what we <strong>love</strong>!
                 </p>
             </div>
-            <div class="index-image"><a href="products.html">Check out one of our specialties</a></div>
+            <div class="index-image"><a href="products.html">Check out our specialties</a></div>
         </div>
     </main>
 </body>
+<script>
+    function hamburgerFunction() {
+        var x = document.getElementById("mobile-links");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+    }
+</script>
 </html>

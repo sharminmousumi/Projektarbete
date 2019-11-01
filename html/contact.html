@@ -15,14 +15,26 @@
                 <img src="../img/logo.png">
             </div>
             <ul class="nav-bar-menu">
-                <li class="nav-list-item "><a href="index.html">Home</a></li>
+                <li class="nav-list-item active"><a href="index.html">Home</a></li>
                 <li class="nav-list-item"><a href="products.html">Products</a></li>
                 <li class="nav-list-item"><a href="about.html">About</a></li>
-                <li class="nav-list-item active"><a href="contact.html">Contact</a></li>
+                <li class="nav-list-item"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <nav class="mobile-nav-bar">   
+            <a href="index.html">Home</a>     
+            <div id="mobile-links">
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </nav>
     </header>
-
     <main>
         <div class="container">
             <div class="toptext">
@@ -44,4 +56,14 @@
         <!--<img src="https://vignette.wikia.nocookie.net/muppet/images/4/41/Swedish-chef.jpg/revision/latest/scale-to-width-down/280?cb=20111104173207">-->
 </div>
 </body>
+<script>
+        function hamburgerFunction() {
+            var x = document.getElementById("mobile-links");
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
+        }
+    </script>
 </html>
