@@ -1,27 +1,13 @@
-
-.contact-form{
-    border:1px solid hotpink;
-    height:30em;
-    width:70%;
-    background-color:lightgrey; 
-    margin:0.5em;
-}
-.contact-form-row{
-    border:1px solid teal;
-   clear:both;
-    margin:0.5em;
-    padding:0.5em;
-    height:2em;
-
-}
-
+/*denna styr bakgrundsmallen*/
 main{
     width:100%;
     background-color: #1b1c20;
     top:57px;
     bottom:0px;
     position: absolute;
- }
+    
+}
+/*denna styr mittenrutan och de tomma rutorna till vänster och höger*/
  .container{
     width: 70%;
     border-left:  1px solid rgb(95, 95, 95);
@@ -30,23 +16,57 @@ main{
     top:0px;
     bottom:0px;
     position: absolute;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    color:white;
-    font-style: oblique;
- }
- .form-text{
-     border:1px solid red;
-   margin:0.5em;
-   width:20%;
-   float:left;
- }
+}
 
- .form-input{
-     border:1px solid green;
-     width:70%;
-     float:left;
-     margin:0.5em;  
- }
+ /*så att de båda rutorna går ihop, annars blir det ett mellanrum*/
+ .wrapper >*{
+    padding:1em;
+  }
+  .container h1{
+      text-align:center;
+      margin:1em;
+      color:orange;
+      font-family:"Roboto Mono";
+  }
+  .wrapper{
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1em;
+    font-family:"Roboto Mono";
+  }
+  
+  .info{
+    background-color:pink;
+  }
+  .form form{
+  margin:0.5em;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  gap:20px;
+  }
+  
+  ul{
+    list-style:none;
+    padding:0;
+    
+  }
+  .info h2, ul{
+    text-align:center;
+  }
+  
+  .form {
+    background-color:green;
+  }
+  form textarea, form button, form input{
+    width:100%;
+    padding:0.5em;
+  }
+  label{
+    display:block;
+    font-size:1.2em;
+  }
+  .full{
+    border:2px solid white;
+    grid-column:1/3;
+  }
