@@ -1,54 +1,98 @@
 body {
-    background-color:whitesmoke;
+    background-color:black;
   }
  
-  img {
+  .ig {
     float: right;
-    border-radius: 20px;
-    width: 600px;
-    height: 400px;
-    clear: right;
-    padding-top:6px;
-    padding-left:8px;
+    border-radius: 40px;
+    padding-left:12px;
+    height:450px;
+    width:50%;
+    opacity:0.5;
+    transition: opacity 600ms, transform 600ms;
+    
   }
-  
- 
+  .ig:hover{
+    opacity:1;
+    transform: scale(1.1);
+}
+
  .image{
-     padding:30px;
-     margin-left: 40px;
+     padding: 70px;
      text-align: justify;
-     
-     
+     color:white;
  }
+ .image h1{
+  font-size: 50px;
+}
+     
+ 
  .image p2{
 font-weight: normal;
 text-decoration: none;
-font-style: normal;
 font-variant: normal;
 text-transform: none;
-color:#002233;
+color:white;
+font-style: oblique;
+font-size: 38px;
 
  }
  
- .kund {
-     color:#002233;
-     padding-top: 10px;
-     padding-left:65px;
-     padding-right:50px;
-     text-align: justify;
-     line-height: 2em;
-     
- }
- @media screen and (min-width: 600px) {
-    .kund {
-      font-size: 30px;
-    }
-  }
-  @media screen and (min-width: 600px) {
-    .image {
-      font-size: 30px;
-    }
-  }
+ div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 450px;
+  height: 450px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  opacity:1;
+  transform: scale(1.1);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 40px;
+  text-align: center;
+  color:white;
+  
+   
+}
+.bt{
+  font-size: 30px;
+  color: blue;
+  background-color:maroon;
+}
+
+div.all-gallery{
+  padding-left: 70px;
+  padding-right: 70px;
  
+}
+
+
+ .kund {
+  font-size: 29px;
+  font-style:oblique;
+  padding:50px;
+  font-weight: normal;
+color:white;
+text-align: center;
+
+ }
+
+ #tid{
+color:white;
+font-size: 40px;
+font-style: oblique;
+text-align: center;
+ }
+
 
   
