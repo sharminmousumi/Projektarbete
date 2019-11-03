@@ -73,25 +73,29 @@ div.desc {
 div.all-gallery{
   padding-left: 70px;
   padding-right: 70px;
+  
+  
  
 }
 
 
  .kund {
-  font-size: 29px;
+  font-size: 40px;
   font-style:oblique;
-  padding:50px;
   font-weight: normal;
 color:white;
 text-align: center;
+padding-right:70px;
+padding-left:70px;
+padding-top:550px;
+}
 
- }
-
- #tid{
+ .tid{
 color:white;
 font-size: 40px;
 font-style: oblique;
 text-align: center;
+padding-top: 70px;
  }
 
 
