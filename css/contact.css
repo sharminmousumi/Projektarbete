@@ -32,12 +32,13 @@ main{
 
 
   .wrapper{
-     padding:1.5em;
+    /*padding:1.5em;*/
     max-width:1000px;
     margin-left:auto;
     margin-right:auto;
     margin-top:1em;
     color:white;
+    box-shadow:10px 10px 5px black;/*hur fixar jag så att skuggan ligger där den ska. Padding ställer till det*/
     
     font-family:"Roboto Mono";
   }
@@ -104,8 +105,10 @@ background-color:orange;
     max-width: 1000px;
     margin-left: auto;
     margin-right:auto;
-    padding:1.5em;
+    /*padding:1.5em;*/ /*kan inte ha padding och box-shadow*/
+    padding-top:1.5em;
     color:white;
+    box-shadow:10px 10px 5px black;
    
  
 }
@@ -128,7 +131,7 @@ background-color:orange;
     size:50%;
 }
 
-@media (min-width:700px)
+@media (min-width:900px)
 {
     .wrapper{
         display:grid;
