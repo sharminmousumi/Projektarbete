@@ -43,6 +43,9 @@ main{
     font-family:"Roboto Mono";
   }
   
+  .container h1{
+    margin-top:0em;
+  }
   .company-info{
     background-color:rgb(95, 95, 95);
   }
@@ -50,11 +53,9 @@ main{
   ul{
     list-style:none;
     padding:0;
-}
-   ul{
     text-align:center;
-  }
- 
+}
+
  strong{
       color:#CD214B;
   }
@@ -91,7 +92,9 @@ main{
   form button {
       background-color:#CD214B;
       border:none;
-      transition: background-color 0.8s
+      transition: background-color 0.8s;
+      border-radius: 4px;
+      box-shadow:5px 5px 2px dimgray;
   }
   form  button:hover{
 background-color:orange;
