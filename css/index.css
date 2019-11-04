@@ -99,3 +99,24 @@
         padding-right:2em;
     }
 }
+/* Iphone 5  media rule*/
+@media screen and (device-aspect-ratio: 40/71){
+    .index-image{
+        height:10em;
+        line-height: 10em;
+    }
+}
+/* Galaxy S5 media query */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+      .index-image{
+          height:12em;
+          line-height: 12em;
+      }
+
+}
+
+

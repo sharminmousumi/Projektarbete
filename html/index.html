@@ -22,17 +22,18 @@
             </ul>
         </nav>
         <nav class="mobile-nav-bar">   
-            <a href="index.html">Home</a>     
+            <a href="index.html">Home</a>
+            <input type="checkbox" id="hamburger-btn"/>
+            <label class="btn" for="hamburger-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
             <div id="mobile-links">
                 <a href="products.html">Products</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </a>
         </nav>
     </header>
     <main>
@@ -41,20 +42,11 @@
                 <h1>Welcome</h1>
                 <p>We are "Code-food;"! A team of students that <strong>loves</strong> to learn, code and cook food!<br>
                 Our vision and goal is to create a simple way too order food, meanwhile we do what we <strong>love</strong>!
+                Click on the image below to see our <strong>specialties</strong>. 
                 </p>
             </div>
             <div class="index-image"><a href="products.html">Check out our specialties</a></div>
         </div>
     </main>
 </body>
-<script>
-    function hamburgerFunction() {
-        var x = document.getElementById("mobile-links");
-        if (x.style.display === "block") {
-        x.style.display = "none";
-        } else {
-        x.style.display = "block";
-        }
-    }
-</script>
 </html>

@@ -22,17 +22,18 @@
             </ul>
         </nav>
         <nav class="mobile-nav-bar">   
-            <a href="index.html">Home</a>     
+            <a href="index.html">Home</a>
+            <input type="checkbox" id="hamburger-btn"/>
+            <label class="btn" for="hamburger-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
             <div id="mobile-links">
                 <a href="products.html">Products</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </a>
         </nav>
     </header>
     <main>
@@ -50,20 +51,5 @@
 
         </div>
     </main>
- 
-
-   
-        <!--<img src="https://vignette.wikia.nocookie.net/muppet/images/4/41/Swedish-chef.jpg/revision/latest/scale-to-width-down/280?cb=20111104173207">-->
-</div>
 </body>
-<script>
-        function hamburgerFunction() {
-            var x = document.getElementById("mobile-links");
-            if (x.style.display === "block") {
-            x.style.display = "none";
-            } else {
-            x.style.display = "block";
-            }
-        }
-    </script>
 </html>

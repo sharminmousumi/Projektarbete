@@ -76,22 +76,6 @@ main{
 .mobile-nav-bar #mobile-links{
     display:none;
 }
-
-.mobile-nav-bar a.icon{
-    background-color: #1b1c20;
-    border-left: 1px solid rgb(95, 95, 95);
-    padding:10px 15px;
-    display:block;
-    position: absolute;
-    right:0;
-    top:0;
-}
-.icon div{
-    width:35px;
-    height:5px;
-    background-color: rgb(95, 95, 95);
-    margin:6px 0;
-}
 .mobile-nav-bar a{
     border-top: 1px solid rgb(95, 95, 95);
     color:white;
@@ -100,14 +84,27 @@ main{
     font-size: 17px;
     display:block;
 }
-.hamburger{    
-    display: inline-block;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+#hamburger-btn{
+    display:none;
 }
-/*  sett width 100% width på nav-bar menu på alla bildskärmar mindre än desktop */
+#hamburger-btn + label{
+    color:white;
+    background-color: #1b1c20;
+    border-left: 1px solid rgb(95, 95, 95);
+    padding:10px 15px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+#hamburger-btn + label > div{
+    width:35px;
+    height:5px;
+    background-color: rgb(95, 95, 95);
+    margin:6px 0;
+}
+#hamburger-btn:checked ~ #mobile-links {
+    display:block;
+}
 @media only screen and (max-width:1024px){
     main{
         top:62px;
