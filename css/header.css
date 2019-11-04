@@ -91,7 +91,7 @@ main{
     color:white;
     background-color: #1b1c20;
     border-left: 1px solid rgb(95, 95, 95);
-    padding:10px 15px;
+    padding:11px 15px;
     position: absolute;
     right:0;
     top:0;
@@ -107,6 +107,17 @@ main{
 }
 @media only screen and (max-width:1024px){
     main{
+        top:86px;
+    }
+    .nav-bar{
+        display:none;
+    }
+    .mobile-nav-bar{
+        display:block;
+    }
+}
+@media only screen and (max-width:767px){
+    main{
         top:62px;
     }
     .nav-bar{
@@ -114,5 +125,13 @@ main{
     }
     .mobile-nav-bar{
         display:block;
+    }
+}
+@media (min-width:768px){
+    .mobile-nav-bar a{
+        font-size:2.4em;
+    }
+    #hamburger-btn + label{
+        padding:23px 30px;
     }
 }
