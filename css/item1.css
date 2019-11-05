@@ -46,21 +46,21 @@ main{
     
 
 }
-.index-text{
-    display:flex;
-    flex-direction: column;
+
+.container h1{
+    
     text-align: center;
-    justify-content: flex-start;
-}
-.index-text h1{
     text-decoration: underline;
     margin-bottom: 1em;
     font-size: 3em;
     color:orange;
+    animation: text 3s 1;
 }
-.index-text p{
+.container p{
+    
     font-size: 1.2em;
     color:lightgray;
+    position: relative;
 }  
 @media only screen and (min-width:440px) and (max-width:768px){
     .container{
@@ -68,24 +68,29 @@ main{
         left:0;
     }
 }
-.container h1 {
-	position: absolute;
-	top: 50%;
-	line-height: 100px;
-	height: 90px;
-	margin-top: -50px;
-	font-size: 90px;
-	width: 100%;
-	text-align: center;
-	color: transparent;
-	-webkit-animation: blurFadeInOut 3s ease-in backwards;
-	-moz-animation: blurFadeInOut 3s ease-in backwards;
-	-ms-animation: blurFadeInOut 3s ease-in backwards;
-	animation: blurFadeInOut 3s ease-in backwards;
-}
-.container h1.frame-1 {
-	-webkit-animation-delay: 0s;
-	-moz-animation-delay: 0s;
-	-ms-animation-delay: 0s;
-	animation-delay: 0s;
-}
+
+
+  
+  @keyframes text {
+    0%{
+      color:yellow;
+      margin-bottom: 20px;
+    }
+    30%{
+      color:sandybrown;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      
+    }
+    65%{
+        color:salmon;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
+    65%{
+     color:orange;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
+  }
+  
