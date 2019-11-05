@@ -1,5 +1,52 @@
 
 .contact-form{
-    border:1 px solid black;
+    border:1px solid hotpink;
+    height:30em;
+    width:70%;
+    background-color:lightgrey; 
+    margin:0.5em;
+}
+.contact-form-row{
+    border:1px solid teal;
+   clear:both;
+    margin:0.5em;
+    padding:0.5em;
+    height:2em;
+
 }
 
+main{
+    width:100%;
+    background-color: #1b1c20;
+    top:57px;
+    bottom:0px;
+    position: absolute;
+ }
+ .container{
+    width: 70%;
+    border-left:  1px solid rgb(95, 95, 95);
+    border-right: 1px solid rgb(95, 95, 95);
+    left:15%;
+    top:0px;
+    bottom:0px;
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color:white;
+    font-style: oblique;
+ }
+ .form-text{
+     border:1px solid red;
+   margin:0.5em;
+   width:20%;
+   float:left;
+ }
+
+ .form-input{
+     border:1px solid green;
+     width:70%;
+     float:left;
+     margin:0.5em;  
+ }
