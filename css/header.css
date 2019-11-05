@@ -7,7 +7,7 @@ header{
     width:100%;
     position: fixed;
     top:0;
-    border-bottom: 1px solid rgb(95, 95, 95);
+    z-index:100;
 }
 main{
     width:100%;
@@ -30,6 +30,7 @@ main{
     background-color: #1b1c20;
     font-size: 14px;
     font-weight: 500;
+    border-bottom:1px solid rgb(95, 95, 95);
 }
 .nav-bar-menu{
     display:flex;
@@ -65,54 +66,72 @@ main{
     background-color: rgb(95, 95, 95);
     color:white;
 }
-/*  sett width 100% width på nav-bar menu på alla bildskärmar mindre än desktop */
-@media only screen and (min-width:768px) and (max-width:1024px){
-    .nav-bar-menu{
-        width:100%;
-        font-size:1.8em;
-    }
-    .nav-list-item a{
-        padding:20px;
-    }
+.mobile-nav-bar{
+    display:none;
+    overflow:hidden;
+    background-color: #1b1c20;
+    position: relative;
+    border-bottom: 1px solid rgb(95, 95, 95);
+}
+.mobile-nav-bar #mobile-links{
+    display:none;
+}
+.mobile-nav-bar a{
+    border-top: 1px solid rgb(95, 95, 95);
+    color:white;
+    padding:20px 24px;
+    text-decoration: none;
+    font-size: 17px;
+    display:block;
+}
+#hamburger-btn{
+    display:none;
+}
+#hamburger-btn + label{
+    color:white;
+    background-color: #1b1c20;
+    border-left: 1px solid rgb(95, 95, 95);
+    padding:11px 15px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+#hamburger-btn + label > div{
+    width:35px;
+    height:5px;
+    background-color: rgb(95, 95, 95);
+    margin:6px 0;
+}
+#hamburger-btn:checked ~ #mobile-links {
+    display:block;
+}
+@media only screen and (max-width:1024px){
     main{
-        top:69px;
+        top:86px;
     }
-    #logo{
+    .nav-bar{
         display:none;
+    }
+    .mobile-nav-bar{
+        display:block;
     }
 }
-@media only screen and (min-width:441px) and (max-width:767px){
-    .nav-bar-menu{
-        width:100%;
-    }
-    #logo{
-        display:none;
-    }
-
-}
-@media only screen and (min-width:320px) and (max-width:440px){
-    .nav-bar-menu{
-        width:100%;
-        font-size: 1.4em;
-    }
-    .nav-list-item a{
-        padding:17px;
-    }
-    #logo{
-        display:none;
-    }
-    /* Media rule for only Iphone 5 */
-@media screen and (device-aspect-ratio: 40/71) {
-    .nav-bar-menu{
-        font-size:1.2em;
-    }
-    .nav-list-item a{
-        padding: 15px;
-    }
+@media only screen and (max-width:767px){
     main{
-        top:51px;
+        top:62px;
+    }
+    .nav-bar{
+        display:none;
+    }
+    .mobile-nav-bar{
+        display:block;
     }
 }
-
-
+@media (min-width:768px){
+    .mobile-nav-bar a{
+        font-size:2.4em;
+    }
+    #hamburger-btn + label{
+        padding:23px 30px;
+    }
 }

@@ -1,52 +1,159 @@
-
-.contact-form{
-    border:1px solid hotpink;
-    height:30em;
-    width:70%;
-    background-color:lightgrey; 
-    margin:0.5em;
-}
-.contact-form-row{
-    border:1px solid teal;
-   clear:both;
-    margin:0.5em;
-    padding:0.5em;
-    height:2em;
-
-}
-
+/*denna styr bakgrundsmallen*/
 main{
     width:100%;
     background-color: #1b1c20;
     top:57px;
     bottom:0px;
     position: absolute;
- }
+    
+}
+/*denna styr mittenrutan och de tomma rutorna till vänster och höger*/
  .container{
     width: 70%;
     border-left:  1px solid rgb(95, 95, 95);
     border-right: 1px solid rgb(95, 95, 95);
     left:15%;
     top:0px;
-    bottom:0px;
+   
+    height:100%;
     position: absolute;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    color:white;
-    font-style: oblique;
- }
- .form-text{
-     border:1px solid red;
-   margin:0.5em;
-   width:20%;
-   float:left;
- }
+}
 
- .form-input{
-     border:1px solid green;
-     width:70%;
-     float:left;
-     margin:0.5em;  
- }
+ /*så att de båda rutorna går ihop, annars blir det ett mellanrum*/
+ .wrapper >*{
+    padding:1em;
+  }
+  .container h1, .container h2{
+      text-align:center;
+      
+      color:orange;
+      font-family:"Roboto Mono";
+  }
+  .container> h1 {
+   margin-bottom:1em;
+   
+  }
+  .container >h2 {
+   margin-top:1em;
+   
+  }
+
+
+  .wrapper{
+    /*padding:1.5em;*/
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1em;
+    color:white;
+    box-shadow:10px 10px 5px black;/*hur fixar jag så att skuggan ligger där den ska. Padding ställer till det*/
+    
+    font-family:"Roboto Mono";
+  }
+  
+ 
+  .company-info{
+    background-color:rgb(95, 95, 95);
+  }
+  
+  ul{
+    list-style:none;
+    padding:0;
+    text-align:center;
+}
+
+ strong{
+      color:#CD214B;
+  }
+
+  /*kontaktformuläret*/
+  .form-box form{
+    margin:0.5em;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+   grid-row-gap:20px;
+   grid-column-gap:2.5em;
+    }
+  
+  .form-box {
+    background-color:rgb(148, 145, 145);
+  }
+  form textarea, form button, form input{
+    width:100%;
+    padding:0.5em;
+}
+  
+  form{
+      margin-top:1em;
+  }
+  label{
+    display:block;
+    font-size:1.2em;
+    margin-bottom:0.2em;
+  }
+  
+  .full{
+    grid-column:1/3;
+  }
+  form button {
+      background-color:#CD214B;
+      border:none;
+      transition: background-color 0.8s;
+      border-radius: 4px;
+      box-shadow:5px 5px 2px dimgray;
+  }
+  form  button:hover{
+background-color:orange;
+  }
+ 
+
+  /* Klagomålsgrid */
+
+.complain-box{
+    
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:4em;
+    padding:0em;/*kan inte ha padding och box-shadow*/
+    margin-top:1.5em;
+    color:white;
+    box-shadow:10px 10px 5px grey;
+   
+ 
+}
+.complain-text{
+    background-color:rgb(95, 95, 95);
+    text-align:center;
+    padding:2em;
+    font-family:"Roboto mono";
+}
+.complain-img{
+  
+   background-color:white;/*finns det nåt annat sätt att lösa problemet på, hur centrerar man bilden?*/
+}
+.complain-box img {
+  
+  height:100%;
+  border:1px solid hotpink;
+}
+.complain-img >img{
+    size:50%;
+}
+
+@media (min-width:900px)
+{
+    .wrapper{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .company-info h2, .company-info ul{
+        text-align:left;
+        margin-left:1em;
+        margin-top:1em;
+    }
+    .complain-box{
+        display:grid;
+        grid-template-columns:2fr 1fr;
+    }
+}

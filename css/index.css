@@ -29,7 +29,7 @@
 }
 .index-image a{
     display:block;
-    text-decoration: none;
+    text-decoration: underline;
     color:white;
 }
 .index-image:hover{
@@ -40,16 +40,30 @@
     display:flex;
     flex-direction: column;
     text-align: center;
-    justify-content: flex-start;
 }
 .index-text h1{
     text-decoration: underline;
     margin-bottom: 1em;
-    font-size: 3em;
+    font-size: 2em;
 }
 .index-text p{
     font-size: 1.2em;
 }
+@media only screen and (max-width:1024px) and (orientation: landscape) {
+    .index-image {
+        height:6em;
+        line-height:6em;
+    }
+}
+@media only screen and (max-width:823px) and (orientation: landscape) {
+    .index-image {
+        display:none;
+    }
+    .index-text #specialties{
+        display:none;
+    }
+}
+
 @media only screen and (min-width:769px) and (max-width:1024px){
     .container{
         width:100%;
@@ -58,6 +72,9 @@
     .index-text{
         padding-left:2em;
         padding-right:2em;
+    }
+    .index-image{
+        opacity:1;
     }
     .index-text p{
         font-size: 2em;
@@ -72,6 +89,10 @@
         padding-left:2em;
         padding-right:2em;
     }
+    .index-image{
+        opacity:1;
+        font-size: 2em;
+    }
     .index-text p{
         font-size: 1.5em;
     }
@@ -83,7 +104,7 @@
     }
     .index-image{
         height: 15em;
-        font-size:1em;
+        font-size:1.3em;
         line-height: 15em;
         opacity: 1;
     }
@@ -91,4 +112,24 @@
         padding-left:2em;
         padding-right:2em;
     }
+
+}
+/* Iphone 5  media rule*/
+@media screen and (device-aspect-ratio: 40/71){
+    .index-image{
+        height:9em;
+        line-height: 9em;
+    }
+}
+/* Galaxy S5 media query */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+      .index-image{
+          height:12em;
+          line-height: 12em;
+      }
+
 }
