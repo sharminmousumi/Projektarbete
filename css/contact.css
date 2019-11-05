@@ -108,10 +108,10 @@ background-color:orange;
     max-width: 1000px;
     margin-left: auto;
     margin-right:auto;
-    /*padding:1.5em;*/ /*kan inte ha padding och box-shadow*/
-    padding-top:1.5em;
+    padding:0em;/*kan inte ha padding och box-shadow*/
+    margin-top:1.5em;
     color:white;
-    box-shadow:10px 10px 5px black;
+    box-shadow:10px 10px 5px grey;
    
  
 }
