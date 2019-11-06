@@ -1,23 +1,16 @@
 /*denna styr bakgrundsmallen*/
-main{
-    width:100%;
-    background-color: #1b1c20;
-    top:57px;
-    bottom:0px;
-    position: absolute;
-    
-}
 /*denna styr mittenrutan och de tomma rutorna till vänster och höger*/
  .container{
     width: 70%;
     border-left:  1px solid rgb(95, 95, 95);
     border-right: 1px solid rgb(95, 95, 95);
-    left:15%;
-    top:0px;
-   
+    background-color: #1b1c20;
+    opacity:0.92;
     height:100%;
-    position: absolute;
-}
+    margin: 0 auto;
+    margin-top:57px;
+    overflow:scroll;
+  }
 
  /*så att de båda rutorna går ihop, annars blir det ett mellanrum*/
  .wrapper >*{

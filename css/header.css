@@ -4,17 +4,21 @@
     padding:0;
 }
 header{
-    width:100%;
+    width:70%;
+    left:15%;
     position: fixed;
     top:0;
     z-index:100;
 }
 main{
     width:100%;
-    background-color: #1b1c20;
-    top:57px;
-    bottom:0px;
+    height:100vh;
     position: absolute;
+    background-image:url(../img/messy-pizza-on-a-black-table.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    overflow:hidden;
 }
 #logo{
     width:15%;
@@ -28,6 +32,7 @@ main{
 }
 .nav-bar{
     background-color: #1b1c20;
+    opacity:0.92;
     font-size: 14px;
     font-weight: 500;
     border-bottom:1px solid rgb(95, 95, 95);
@@ -35,7 +40,7 @@ main{
 .nav-bar-menu{
     display:flex;
     align-items: center;
-    width:70%;
+    width:100%;
     font-size: 1.2em;
     list-style: none;
     border-left: 1px solid rgb(95, 95, 95);
@@ -106,19 +111,9 @@ main{
     display:block;
 }
 @media only screen and (max-width:1024px){
-    main{
-        top:86px;
-    }
-    .nav-bar{
-        display:none;
-    }
-    .mobile-nav-bar{
-        display:block;
-    }
-}
-@media only screen and (max-width:767px){
-    main{
-        top:62px;
+    header{
+        width: 100%;
+        left:unset;
     }
     .nav-bar{
         display:none;
@@ -133,5 +128,18 @@ main{
     }
     #hamburger-btn + label{
         padding:23px 30px;
+    }
+}
+
+@media only screen and (max-width:767px){
+    header{
+        width: 100%;
+        left:unset;
+    }
+    .nav-bar{
+        display:none;
+    }
+    .mobile-nav-bar{
+        display:block;
     }
 }
