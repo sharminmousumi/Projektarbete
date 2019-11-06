@@ -142,9 +142,7 @@ background-color:orange;
   height:100%;
   border:1px solid hotpink;
 }
-.complain-img >img{
-    size:50%;
-}
+
 
 @media (min-width:1024px)
 {
