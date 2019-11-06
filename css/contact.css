@@ -25,8 +25,7 @@ main{
   }
   .container h1, .container h2{
       text-align:center;
-      
-      color:orange;
+      color:lightgrey;
       font-family:"Roboto Mono";
   }
   .container> h1 {
@@ -35,13 +34,20 @@ main{
   }
   .container >h2 {
    margin-top:1em;
+   }
    
-  }
+   .semikolon-color {
+     color:#CD214B;
+   }
+.company-name-color {
+  color:orange;
+}
+   
 
 
   .wrapper{
     /*padding:1.5em;*/
-    max-width:90%;
+    max-width:80%;
     margin-left:auto;
     margin-right:auto;
     margin-top:1em;
@@ -62,10 +68,7 @@ main{
     text-align:center;
 }
 
- strong{
-      color:#CD214B;
-  }
-
+ 
   /*kontaktformuläret*/
   .form-box form{
     margin:0.5em;
@@ -111,14 +114,16 @@ background-color:orange;
 
 .complain-box{
     
-    max-width: 1000px;
+    max-width: 80%;
     margin-left: auto;
     margin-right:auto;
     margin-bottom:4em;
     padding:0em;/*kan inte ha padding och box-shadow*/
-    margin-top:1.5em;
+    margin-top:3em;
     color:white;
     box-shadow:10px 10px 5px grey;
+    display:grid;
+    grid-template-columns:1fr;
    
  
 }
@@ -141,7 +146,7 @@ background-color:orange;
     size:50%;
 }
 
-@media (min-width:900px)
+@media (min-width:1024px)
 {
     .wrapper{
         display:grid;
@@ -156,4 +161,5 @@ background-color:orange;
         display:grid;
         grid-template-columns:2fr 1fr;
     }
+   
 }
