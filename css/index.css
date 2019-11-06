@@ -1,10 +1,8 @@
-
-
 .container{
     width: 70%;
     border-left:  1px solid rgb(95, 95, 95);
     border-right: 1px solid rgb(95, 95, 95);
-    height:100%;
+    height:calc(100% - 57px);
     margin:0 auto;
     display:flex;
     flex-direction: column;
@@ -14,22 +12,22 @@
     background-color: #1b1c20;
     opacity:0.92;
     margin-top:57px;
-    /* overflow:scroll; om sidan behöver scrollas */
-    
+    overflow:auto;
 }
 
 .index-image{
     background-image:url(../img/pizza-3007395_960_720.jpg);
     background-size: cover;
     background-position: center;
-    height:50vh;
-    width:70%;
+    height:30vh;
     border-radius:8px;
     opacity:0.5;
     transition: opacity 600ms, transform 600ms;
     text-align: center;
-    line-height:50vh;
-    font-size: 3em;
+    line-height:30vh;
+    padding-left:10px;
+    padding-right:10px;
+    font-size: 2.5em;
 }
 .index-image a{
     display:block;
@@ -64,10 +62,7 @@
     color:#CD214B;
 }
 @media only screen and (max-width:1024px) and (orientation: landscape) {
-    .index-image {
-        height:6em;
-        line-height:6em;
-    }
+
 }
 @media only screen and (max-width:823px) and (orientation: landscape) {
     .index-image {
@@ -117,10 +112,9 @@
         left:unset;
     }
     .index-image{
-        height: 15em;
         font-size:1.3em;
-        line-height: 15em;
         opacity: 1;
+        margin-bottom:3em;
     }
     .index-text{
         padding-left:2em;
@@ -129,12 +123,24 @@
 
 }
 /* Iphone 5  media rule*/
-@media screen and (device-aspect-ratio: 40/71){
+@media screen and (min-device-width : 320px) and (max-device-width : 568px) {
     .index-image{
-        height:9em;
-        line-height: 9em;
+        display:none;
+    }
+    #specialties{
+        display:none;
     }
 }
+/* Iphone 5 landscape */
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-width : 568px) 
+and (orientation : landscape){
+    .index-text p{
+        font-size: 1.2em;
+    }
+}
+
 /* Galaxy S5 media query */
 @media screen 
   and (device-width: 360px) 
@@ -142,8 +148,7 @@
   and (-webkit-device-pixel-ratio: 3) 
   and (orientation: portrait) {
       .index-image{
-          height:12em;
-          line-height: 12em;
+          margin-bottom:3em;
       }
 
 }
