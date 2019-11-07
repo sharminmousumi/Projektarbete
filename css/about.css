@@ -15,7 +15,7 @@ body {
     border-right: 1px solid rgb(95, 95, 95);
     left:15%;
     top:0px;
-    height:250%;
+    height:180%;
     position: absolute;
  }
   .ig {
@@ -68,6 +68,7 @@ font-size: 40px;
 }
 div.all-gallery{
   padding-top: 50px;
+  object-fit: cover;
 }
 div.gallery:hover {
  
@@ -101,7 +102,7 @@ div.desc {
   font-weight: normal;
   color:white;
   text-align: center;
-  padding-top:550px;
+  padding-top:530px;
 }
 .kund h2{
   color:orangered;
