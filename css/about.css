@@ -15,7 +15,7 @@ body {
     border-right: 1px solid rgb(95, 95, 95);
     left:15%;
     top:0px;
-    height:180%;
+    height:200%;
     position: absolute;
  }
   .ig {
@@ -106,6 +106,7 @@ div.desc {
 }
 .kund h2{
   color:orangered;
+  font-size: 70px;
 }
 .kund b{
   color:maroon;
@@ -119,16 +120,17 @@ padding-top: 70px;
  }
  .tid h3{
    color:orangered;
+   font-size: 70px;
  }
  .tid h4{
    color:orangered;
+   font-size: 70px;
  }
  @media screen and (min-width: 600px) {
   .kund {
     font-size: 30px;
   }
-}
-@media screen and (min-width: 600px) {
+
   .image {
     font-size: 30px;
   }
