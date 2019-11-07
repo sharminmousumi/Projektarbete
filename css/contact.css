@@ -9,7 +9,7 @@ main{
 }
 /*denna styr mittenrutan och de tomma rutorna till vänster och höger*/
  .container{
-    width: 70%;
+    width: 30%;
     border-left:  1px solid rgb(95, 95, 95);
     border-right: 1px solid rgb(95, 95, 95);
     left:15%;
