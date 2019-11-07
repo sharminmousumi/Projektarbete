@@ -8,7 +8,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    font-family:"Roboto Mono";
     background-color: rgba(27, 28, 32,0.92);
     margin-top:57px;
     overflow:auto;
@@ -46,10 +45,13 @@
     margin-bottom: 1em;
     font-size: 2em;
     color:white;
+    font-family:"Nunito";
 }
 .index-text p{
     font-size: 1.2em;
     color:white;
+    font-family:"Nunito";
+
 }
 .index-text h1 strong{
     color:orange;
@@ -59,9 +61,6 @@
 }
 .index-text strong{
     color:#CD214B;
-}
-@media only screen and (max-width:1024px) and (orientation: landscape) {
-
 }
 @media only screen and (max-width:823px) and (orientation: landscape) {
     .index-image {
