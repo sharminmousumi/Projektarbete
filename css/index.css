@@ -9,8 +9,7 @@
     align-items: center;
     justify-content: space-around;
     font-family:"Roboto Mono";
-    background-color: #1b1c20;
-    opacity:0.92;
+    background-color: rgba(27, 28, 32,0.92);
     margin-top:57px;
     overflow:auto;
 }
@@ -46,7 +45,7 @@
 .index-text h1{
     margin-bottom: 1em;
     font-size: 2em;
-    color:lightgray;
+    color:white;
 }
 .index-text p{
     font-size: 1.2em;
