@@ -9,19 +9,19 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
     </style>
-    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+    </style>
+    <title>Kontakt</title>
 </head>
 <body>
     <header>
         <nav class="nav-bar">
-            <div id="logo">
-                <img src="../img/logo.png">
-            </div>
             <ul class="nav-bar-menu">
-                <li class="nav-list-item active"><a href="index.html">Home</a></li>
+                <li class="nav-list-item"><a href="index.html">Home</a></li>
                 <li class="nav-list-item"><a href="products.html">Products</a></li>
                 <li class="nav-list-item"><a href="about.html">About</a></li>
-                <li class="nav-list-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-list-item active"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <nav class="mobile-nav-bar">   
@@ -42,12 +42,12 @@
 <main>
     <div class="container">
         <h2>Om du har frågor eller synpunkter...</h2>
-        <h1>Kontakta oss på Code-Food<strong>;</strong></h1>
+        <h1>Kontakta oss på <span class="company-name-color">Code-Food</span><span class="semikolon-color">;</span></h1>
       
                 <div class="wrapper">
                         <div class="company-info">
                             
-                            <h2>Code-Food<strong>;</strong></h2>
+                            <h2><span class="company-name-color">Code-Food</span><span class="semikolon-color">;</span></h2>
                             <ul>
                             <li>Geekgatan 42</li>
                             <li>070-3141592</li>
@@ -57,29 +57,29 @@
                         </div>
                         <div class="form-box">
                             
-                            <form>
+                            <form action="#">
                             <p>
                                 <label>Namn</label>
-                                <input type="text">
+                                <input type="text" name="firstname">
                             </p>
                             <p>
                                 <label>Adress</label>
-                                <input type="text">
+                                <input type="text" name="adress">
                             </p>
                             <p>
                                 <label>Email</label>
-                                <input type="text">
+                                <input type="text" name="email">
                             </p>
                                 <p>
                                 <label>Telefon</label>
-                                <input type="text">
+                                <input type="text" name="phone">
                             </p>
                             <p class="full">
                                 <label>Meddelande</label>
-                                <textarea rows="5"></textarea>
+                                <textarea rows="5" name="comment"></textarea>
                             </p>
                             <p class="full">  
-                                <button>Skicka</button>
+                                <input type="submit" value="Skicka" class="button">
                             </p>
                             </form>
                         </div>
@@ -93,16 +93,15 @@
                             </p>
                         </div>
                         <div class="complain-img">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/e/e7/The_Swedish_Chef.jpg">
+                            <img src="../img/The_Swedish_Chef.jpg">
                         </div>
                     </div> 
-       
-         
-
     </div>
     
 </main>   
-       
+<footer>
+    <div class="footer-text"><p>© 2011 John Doe All Rights Reserved</p></div>
+</footer> 
 
 </body>
 </html>
