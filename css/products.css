@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    border: 4px rebeccapurple;
+    border: 4px white;
+    color: white;
   }
   
   body {
@@ -49,7 +50,7 @@
 
     }
     .container-item-image{
-      border: 1px solid yellow;
+      
       margin-bottom: 20px;
       flex:2;
       /* background-image:url(../img/joltcola.jpg); */
@@ -63,7 +64,7 @@
       object-fit: cover;
       width: 100%;
       
-      border: 3px solid orange;
+      
 
     }
 
@@ -155,9 +156,11 @@
 
     }
   
-     .container-item div:first-child{
-        border: 1px solid yellow;
+     .container-item >div{
+        /* border: 1px solid yellow; */
         margin-bottom: 20px;
+        word-spacing: 7em;
+        text-decoration: none;
         flex:2;
          /* background-image:url(../img/joltcola.jpg);  */
         background-size: cover;
