@@ -144,3 +144,20 @@ background-color:orange;
         grid-template-columns:2fr 1fr;
     }
 }
+@media only screen and (min-width:769px) and (max-width:1024px){
+  .container{
+      width:100%;
+      left:unset;
+  }
+}
+@media only screen and (min-width:440px) and (max-width:768px){
+  .container{
+      width:100%;
+      left:unset;
+  }
+}
+@media only screen and (min-width:320px) and (max-width:440px){
+  .container{
+      width:100%;
+      left:unset;
+  }
