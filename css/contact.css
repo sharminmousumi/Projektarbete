@@ -92,7 +92,7 @@
   .full{
     grid-column:1/3;
   }
-  form button {
+  .button {
       background-color:#CD214B;
       border:none;
       transition: background-color 0.8s;
@@ -100,7 +100,7 @@
       color:white;
       box-shadow:5px 5px 2px dimgray;
   }
-  form  button:hover{
+  .button:hover{
 background-color:orange;
   }
  
@@ -117,7 +117,7 @@ background-color:orange;
     margin-top:1.5em;
     margin-bottom:1.5em;
     color:white;
-    box-shadow:10px 10px 5px grey;
+    box-shadow:10px 10px 5px black;
     display:grid;
     grid-template-columns:1fr;
    
