@@ -29,8 +29,10 @@
 }
 .index-image a{
     display:block;
-    text-decoration: underline;
+    text-decoration: none;
     color:white;
+    font-family:"Nunito";
+
 }
 .index-image:hover{
     opacity:1;
