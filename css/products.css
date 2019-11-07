@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    border: 4px rebeccapurple;
+  }
+  
+  body {
+    margin: 0;
+   
+  }
+  
+  
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    
+    
+    main{
+        width:100%;
+        background-color: #1b1c20;
+        top:57px;
+        bottom:0px;
+        position: absolute;
+    }
+    .container{
+        width: 70%;
+        border-left:  1px solid rgb(95, 95, 95);
+        border-right: 1px solid rgb(95, 95, 95);
+        left:15%;
+        top:0px;
+        bottom:0px;
+        position: absolute; 
+        display:grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr  ;
+        color:white;
+    }
+    .container-item {
+        border: 1px solid white;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        padding:1em;
+        margin:1em;
+        height: 20em;
+        
+
+
+    }
+    .container-item-image{
+      border: 1px solid yellow;
+      margin-bottom: 20px;
+      flex:2;
+      /* background-image:url(../img/joltcola.jpg); */
+      background-size: cover;
+      background-position: center;
+
+
+    }
+
+    .image1>img{
+      object-fit: cover;
+      width: 100%;
+      
+      border: 3px solid orange;
+
+    }
+
+    .image2>img{
+      object-fit: cover;
+      width: 100%;
+      border: 3px solid orange;
+   
+    }
+
+    .image3>img{
+      object-fit: cover;
+      width: 100%;
+      border :3px solid orange;
+      
+
+
+    }
+
+    .image4>img{
+      object-fit: cover;
+      width: 100%;
+      border :3px solid orange;
+     
+
+    }
+
+    .image5>img{
+      object-fit: cover;
+      width: 100%;
+      border :3px solid orange;
+     
+
+    }
+
+    .image6>img{
+      object-fit: cover;
+      width: 100%;
+      border :3px solid orange;
+      
+   
+
+
+    }
+    .image7>img{
+      object-fit: cover;
+      width: 100%;
+      border :3px solid orange;
+
+
+    }
+    .image8>img{
+      object-fit: cover;
+      width: 100%;
+      border: 3px solid orange;
+
+
+    }
+    .image9>img{
+      object-fit: cover;
+      width: 100%;
+      
+      border: 3px solid orange;
+
+
+    }
+    .image10>img{
+      object-fit: cover;
+      width: 100%;
+      
+      border: 3px solid orange;
+
+
+    }
+    .image11>img{
+      object-fit: cover;
+      width: 100%;
+      
+      border: 3px solid orange;
+
+
+    }
+    .image12>img{
+      object-fit: cover;
+      width: 100%;
+      
+      border: 3px solid orange;
+
+
+    }
+  
+     .container-item div:first-child{
+        border: 1px solid yellow;
+        margin-bottom: 20px;
+        flex:2;
+         /* background-image:url(../img/joltcola.jpg);  */
+        background-size: cover;
+        background-position: center;
+    } 
+    .container-item div:nth-child(2){
+        flex:1;
+        border:1px solid blue;
+    }
+
+     .container-item div:first-child:hover{
+        opacity:1;
+        transform: scale(1.1);
+        transform: rotate3d(-1,0,0,90 deg)   
+    } 
+    .container-item div:nth-child(2):hover{
+        opacity:1;
+        transform: scale(1.1);
+        animation: pulse 5s infinite;
+    } 
+
+    @keyframes pulse {
+        0% {
+          background-color: #001F3F;
+        }
+        50%{
+            background-color:greenyellow;        }
+        100% {
+          background-color:blue;
+        }
+      }
+
+    /* .container-item div:first-child {
+    @keyframes stretch {
+        0% {
+          transform: scale(.3);
+          background-color: red;
+          border-radius: 100%;
+        }
+        50% {
+          background-color: orange;
+        }
+        100% {
+          transform: scale(1.5);
+          background-color: yellow;
+        }
+      }
+    } */
+
+    .container-item2>a{
+      word-spacing: 7em;
+      text-decoration: none;
+    }
