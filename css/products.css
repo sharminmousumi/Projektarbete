@@ -15,27 +15,21 @@
     display: flex;
     flex-wrap: wrap;
   }
-    
-    
-    main{
-        width:100%;
-        background-color: #1b1c20;
-        top:57px;
-        bottom:0px;
-        position: absolute;
-    }
+  
     .container{
         width: 70%;
         border-left:  1px solid rgb(95, 95, 95);
         border-right: 1px solid rgb(95, 95, 95);
-        left:15%;
-        top:0px;
-        bottom:0px;
-        position: absolute; 
+        margin:0 auto;
+        margin-top:57px;
+        bottom: 57px;
         display:grid;
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr 1fr  ;
         color:white;
+        overflow-y:scroll;
+        background-color: rgba(27, 28, 32,0.92);
+
     }
     .container-item {
         border: 1px solid white;
