@@ -21,7 +21,7 @@
   }
   .container h1, .container h2{
       text-align:center;
-      color:lightgrey;
+      color:white;
   }
   .container> h1 {
    margin-bottom:1.7em;
@@ -30,6 +30,7 @@
   }
   .container >h2 {
    margin-top:1.5em;
+   margin:1em;
    font-family:"Inconsolata";
    }
 
@@ -154,6 +155,21 @@ cursor: pointer;
 }
 
 
+@media (max-width:500px){
+  .form-box>form{
+   
+    display:flex;
+    flex-direction: column;
+  }
+.form-box form input, .full{
+ 
+  margin:0.2em;
+}  
+
+}
+
+
+
 @media (min-width:1024px)
 {
     .wrapper{
@@ -169,6 +185,9 @@ cursor: pointer;
         display:grid;
         grid-template-columns:2fr 1fr;
     }
+}
+
+
 }
 @media only screen and (min-width:769px) and (max-width:1024px){
   .container{
@@ -187,3 +206,7 @@ cursor: pointer;
       width:100%;
       left:unset;
   }
+}
+
+
+  
