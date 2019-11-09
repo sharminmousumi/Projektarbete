@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     border: 4px white;
-    color: white;
+    color: black;
   }
   
   body {
@@ -39,6 +39,7 @@
         padding:1em;
         margin:1em;
         height: 20em;
+        background-color:white;
         
 
 
@@ -50,11 +51,15 @@
       /* background-image:url(../img/joltcola.jpg); */
       background-size: cover;
       background-position: center;
-
-
+     
     }
-
+    
+    .container-item>a{
+      text-decoration: none;
+    }
+   
     .image1>img{
+      margin-top: 5px;
       object-fit: cover;
       width: 100%;
       
@@ -155,22 +160,23 @@
         margin-bottom: 20px;
         word-spacing: 7em;
         text-decoration: none;
+      
         flex:2;
          /* background-image:url(../img/joltcola.jpg);  */
         background-size: cover;
         background-position: center;
     } 
-    .container-item div:nth-child(2){
+    /* .container-item div:nth-child(2){
         flex:1;
         border:1px solid blue;
-    }
+    } */
 
      .container-item div:first-child:hover{
         opacity:1;
         transform: scale(1.1);
         transform: rotate3d(-1,0,0,90 deg)   
     } 
-    .container-item div:nth-child(2):hover{
+    /* .container-item div:nth-child(2):hover{
         opacity:1;
         transform: scale(1.1);
         animation: pulse 5s infinite;
@@ -185,26 +191,102 @@
         100% {
           background-color:blue;
         }
-      }
+      } */
 
-    /* .container-item div:first-child {
-    @keyframes stretch {
-        0% {
-          transform: scale(.3);
-          background-color: red;
-          border-radius: 100%;
-        }
-        50% {
-          background-color: orange;
-        }
-        100% {
-          transform: scale(1.5);
-          background-color: yellow;
-        }
-      }
-    } */
+ 
 
     .container-item2>a{
       word-spacing: 7em;
       text-decoration: none;
     }
+    .itemNamePrice{
+      position: relative;
+      height: 2em;
+      width: 100%;
+      float: center;
+      background-color: none;
+    }
+    
+    .itemNamePrice>div:first-child{
+      position: relative;
+      height: 2em;
+      width: 50%;
+      float:left;
+      /* background-color:white; */
+    }
+    .itemNamePrice>div:nth-child(2){
+      position: relative;
+      height: 2em;
+      width: 25%;
+      float: left;
+      background-color: none;
+      
+    }
+    .itemNamePrice >div:nth-child(3){
+      position: relative;
+      height: 2em;
+      width: 25%;
+      float: left;
+      background-color:white;
+    }
+
+     .shopinglogo{
+      
+      background:url(../img/shoping.png) no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+      position: relative;
+     
+     
+     
+    } 
+    .itemName{
+      font: 2em;
+      color:orange;
+      animation: rotate 2s infinite;
+    }
+    @keyframes rotate{
+     
+        0%{
+          letter-spacing: 2px;
+        }
+        20%{
+          letter-spacing: 4px;
+          
+        }
+        40%{
+          letter-spacing: 6px;
+          /* -webkit-transform: rotate(90deg); */
+        }
+        60%{  
+          letter-spacing: 8px;
+          
+        }
+        80%{
+          letter-spacing: 6px;
+          /* -webkit-transform: rotate(180deg); */
+        }
+        100%{
+          letter-spacing: 4px; 
+        }
+
+     /* 0%{
+    -webkit-transform: rotate(-90deg);
+  }
+  
+    25%{
+    -webkit-transform: rotate(-45deg);
+  }
+  
+    50%{
+    -webkit-transform: rotate(0 deg);
+  }
+    75%{
+    -webkit-transform: rotate(45deg);
+  }
+  
+    100%{
+    -webkit-transform: rotate(90deg);
+  } */
+}
