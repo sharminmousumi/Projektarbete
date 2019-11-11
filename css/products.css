@@ -40,13 +40,11 @@
         margin:1em;
         height: 20em;
         background-color:white;
-        
-
 
     }
     .container-item-image{
-      
-      margin-bottom: 20px;
+     
+      margin-bottom: 30px;
       flex:2;
       /* background-image:url(../img/joltcola.jpg); */
       background-size: cover;
@@ -59,15 +57,17 @@
     }
    
     .image1>img{
-      margin-top: 5px;
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
+      border: 3px solid orange;
       
       
 
     }
 
     .image2>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
       border: 3px solid orange;
@@ -75,6 +75,7 @@
     }
 
     .image3>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
       border :3px solid orange;
@@ -84,6 +85,7 @@
     }
 
     .image4>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
       border :3px solid orange;
@@ -92,6 +94,7 @@
     }
 
     .image5>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
       border :3px solid orange;
@@ -100,6 +103,7 @@
     }
 
     .image6>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
       border :3px solid orange;
@@ -109,6 +113,7 @@
 
     }
     .image7>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
       border :3px solid orange;
@@ -116,6 +121,7 @@
 
     }
     .image8>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
       border: 3px solid orange;
@@ -123,50 +129,50 @@
 
     }
     .image9>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
-      
       border: 3px solid orange;
 
 
     }
     .image10>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
-      
       border: 3px solid orange;
 
 
     }
     .image11>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
-      
       border: 3px solid orange;
 
 
     }
     .image12>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
-      
       border: 3px solid orange;
 
 
     }
   
-     .container-item >div{
-        /* border: 1px solid yellow; */
+     /* .container-item >div{
+        border: 1px solid yellow; 
         margin-bottom: 20px;
         word-spacing: 7em;
         text-decoration: none;
       
         flex:2;
-         /* background-image:url(../img/joltcola.jpg);  */
+         background-image:url(../img/joltcola.jpg);  
         background-size: cover;
         background-position: center;
     } 
-    /* .container-item div:nth-child(2){
+     .container-item div:nth-child(2){
         flex:1;
         border:1px solid blue;
     } */
@@ -191,16 +197,17 @@
         100% {
           background-color:blue;
         }
-      } */
+      } 
 
  
 
     .container-item2>a{
       word-spacing: 7em;
       text-decoration: none;
-    }
+    }*/
     .itemNamePrice{
       position: relative;
+      margin-top: -15px;
       height: 2em;
       width: 100%;
       float: center;
@@ -238,9 +245,8 @@
       height: auto;
       position: relative;
      
-     
-     
     } 
+
     .itemName{
       font: 2em;
       color:orange;
@@ -289,4 +295,12 @@
     100%{
     -webkit-transform: rotate(90deg);
   } */
+}
+.fa{
+  font-size: 50px;
+  color: orange;
+}
+
+.fa:hover{
+  color: darkblue;
 }
