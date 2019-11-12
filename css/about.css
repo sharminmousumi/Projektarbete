@@ -32,7 +32,7 @@
    color:white;
 }
 .image h1{
-font-size: 70px;
+font-size: 60px;
 color:orangered;
 }
    
@@ -79,6 +79,8 @@ color:white;
 background-color: maroon;
 
 }
+
+
 /*vision here */
 .vision{
 font-size: 30px;
@@ -104,34 +106,36 @@ text-align: center;
   25% { left: -100%; }
   45% { left: -100%; }
   50% { left: -200%; }
-  70% { left: -200%; }
-  75% { left: -300%; }
-  95% { left: -300%; }
-  100% { left: -400%; }
+  
   }
   
  
   div#slider { 
-    
+    overflow: hidden;
     background-color:rgba(27, 28, 32,0.92) ;
+    padding-top: 25px;
    }
   div#slider figure img {
-     width: 20%;
+     width: 10%;
      float: left;
    }
   div#slider figure { 
     position: relative;
     width: 500%;
-    height: 5%;
+    height: 200px;
     margin: 0;
     left: 0;
     text-align: left;
     font-size: 0;
-    animation: 3s slidy infinite; 
+    animation: 5s slidy infinite; 
   }
   
-
+div.slider:hover{
+  opacity:1;
+transform: scale(1.1);
+}
 /* footer start  */
+
 .color{
   background-color:rgba(27, 28, 32,0.92);;
 }
@@ -144,6 +148,7 @@ box-sizing: border-box;
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
 padding: 0px 20px 20px 20px;
+
 }
 .footer .col h1 {
 margin: 0;
