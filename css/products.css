@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    border: 4px rebeccapurple;
+    border: 4px white;
+    color: black;
   }
   
   body {
@@ -14,27 +15,21 @@
     display: flex;
     flex-wrap: wrap;
   }
-    
-    
-    main{
-        width:100%;
-        background-color: #1b1c20;
-        top:57px;
-        bottom:0px;
-        position: absolute;
-    }
+  
     .container{
         width: 70%;
         border-left:  1px solid rgb(95, 95, 95);
         border-right: 1px solid rgb(95, 95, 95);
-        left:15%;
-        top:0px;
-        bottom:0px;
-        position: absolute; 
+        margin:0 auto;
+        margin-top:57px;
+        bottom: 57px;
         display:grid;
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr 1fr  ;
         color:white;
+        overflow-y:scroll;
+        background-color: rgba(27, 28, 32,0.92);
+
     }
     .container-item {
         border: 1px solid white;
@@ -44,30 +39,35 @@
         padding:1em;
         margin:1em;
         height: 20em;
-        
-
+        background-color:white;
 
     }
     .container-item-image{
-      border: 1px solid yellow;
-      margin-bottom: 20px;
+     
+      margin-bottom: 30px;
       flex:2;
       /* background-image:url(../img/joltcola.jpg); */
       background-size: cover;
       background-position: center;
-
-
+     
     }
-
+    
+    .container-item>a{
+      text-decoration: none;
+    }
+   
     .image1>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
-      
       border: 3px solid orange;
+      
+      
 
     }
 
     .image2>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
       border: 3px solid orange;
@@ -75,6 +75,7 @@
     }
 
     .image3>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
       border :3px solid orange;
@@ -84,6 +85,7 @@
     }
 
     .image4>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
       border :3px solid orange;
@@ -92,6 +94,7 @@
     }
 
     .image5>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
       border :3px solid orange;
@@ -100,6 +103,7 @@
     }
 
     .image6>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
       border :3px solid orange;
@@ -109,6 +113,7 @@
 
     }
     .image7>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
       border :3px solid orange;
@@ -116,6 +121,7 @@
 
     }
     .image8>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
       border: 3px solid orange;
@@ -123,57 +129,60 @@
 
     }
     .image9>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
-      
       border: 3px solid orange;
 
 
     }
     .image10>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
-      
       border: 3px solid orange;
 
 
     }
     .image11>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
-      
       border: 3px solid orange;
 
 
     }
     .image12>img{
+      margin-top: 15px;
       object-fit: cover;
       width: 100%;
-      
       border: 3px solid orange;
 
 
     }
   
-     .container-item div:first-child{
-        border: 1px solid yellow;
+     /* .container-item >div{
+        border: 1px solid yellow; 
         margin-bottom: 20px;
+        word-spacing: 7em;
+        text-decoration: none;
+      
         flex:2;
-         /* background-image:url(../img/joltcola.jpg);  */
+         background-image:url(../img/joltcola.jpg);  
         background-size: cover;
         background-position: center;
     } 
-    .container-item div:nth-child(2){
+     .container-item div:nth-child(2){
         flex:1;
         border:1px solid blue;
-    }
+    } */
 
      .container-item div:first-child:hover{
         opacity:1;
         transform: scale(1.1);
         transform: rotate3d(-1,0,0,90 deg)   
     } 
-    .container-item div:nth-child(2):hover{
+    /* .container-item div:nth-child(2):hover{
         opacity:1;
         transform: scale(1.1);
         animation: pulse 5s infinite;
@@ -241,24 +250,109 @@
      
     } 
 
-    /* .container-item div:first-child {
-    @keyframes stretch {
-        0% {
-          transform: scale(.3);
-          background-color: red;
-          border-radius: 100%;
-        }
-        50% {
-          background-color: orange;
-        }
-        100% {
-          transform: scale(1.5);
-          background-color: yellow;
-        }
-      }
-    } */
+ 
 
     .container-item2>a{
       word-spacing: 7em;
       text-decoration: none;
+    }*/
+    .itemNamePrice{
+      position: relative;
+      margin-top: -15px;
+      height: 2em;
+      width: 100%;
+      float: center;
+      background-color: none;
     }
+    
+    .itemNamePrice>div:first-child{
+      position: relative;
+      height: 2em;
+      width: 50%;
+      float:left;
+      /* background-color:white; */
+    }
+    .itemNamePrice>div:nth-child(2){
+      position: relative;
+      height: 2em;
+      width: 25%;
+      float: left;
+      background-color: none;
+      
+    }
+    .itemNamePrice >div:nth-child(3){
+      position: relative;
+      height: 2em;
+      width: 25%;
+      float: left;
+      background-color:white;
+    }
+
+     .shopinglogo{
+      
+      background:url(../img/shoping.png) no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+      position: relative;
+     
+    } 
+
+    .itemName{
+      font: 2em;
+      color:orange;
+      animation: rotate 2s infinite;
+    }
+    @keyframes rotate{
+     
+        0%{
+          letter-spacing: 2px;
+        }
+        20%{
+          letter-spacing: 4px;
+          
+        }
+        40%{
+          letter-spacing: 6px;
+          /* -webkit-transform: rotate(90deg); */
+        }
+        60%{  
+          letter-spacing: 8px;
+          
+        }
+        80%{
+          letter-spacing: 6px;
+          /* -webkit-transform: rotate(180deg); */
+        }
+        100%{
+          letter-spacing: 4px; 
+        }
+
+     /* 0%{
+    -webkit-transform: rotate(-90deg);
+  }
+  
+    25%{
+    -webkit-transform: rotate(-45deg);
+  }
+  
+    50%{
+    -webkit-transform: rotate(0 deg);
+  }
+    75%{
+    -webkit-transform: rotate(45deg);
+  }
+  
+    100%{
+    -webkit-transform: rotate(90deg);
+  } */
+}
+.fa{
+  font-size: 50px;
+  color: orange;
+}
+
+.fa:hover{
+  color: darkblue;
+  
+}

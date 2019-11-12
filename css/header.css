@@ -16,6 +16,7 @@ header{
     left:15%;
     position: fixed;
     top:0;
+    font-family:"Nunito";
     z-index:100;
 }
 footer{
