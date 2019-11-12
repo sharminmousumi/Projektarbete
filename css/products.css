@@ -44,7 +44,7 @@
     }
     .container-item-image{
      
-      margin-bottom: 30px;
+      margin-bottom: 35px;
       flex:2;
       /* background-image:url(../img/joltcola.jpg); */
       background-size: cover;
@@ -180,7 +180,7 @@
      .container-item div:first-child:hover{
         opacity:1;
         transform: scale(1.1);
-        transform: rotate3d(-1,0,0,90 deg)   
+        /* transform: rotate3d(-1,0,0,90 deg)    */
     } 
     /* .container-item div:nth-child(2):hover{
         opacity:1;
@@ -259,7 +259,7 @@
     .itemNamePrice{
       position: relative;
       margin-top: -15px;
-      height: 2em;
+      height: 3em;
       width: 100%;
       float: center;
       background-color: none;
@@ -270,11 +270,12 @@
       height: 2em;
       width: 50%;
       float:left;
+      color: black;
       /* background-color:white; */
     }
     .itemNamePrice>div:nth-child(2){
       position: relative;
-      height: 2em;
+      height: 3em;
       width: 25%;
       float: left;
       background-color: none;
@@ -282,7 +283,7 @@
     }
     .itemNamePrice >div:nth-child(3){
       position: relative;
-      height: 2em;
+      height: 3em;
       width: 25%;
       float: left;
       background-color:white;
@@ -301,7 +302,7 @@
     .itemName{
       font: 2em;
       color:orange;
-      animation: rotate 2s infinite;
+      animation: rotate 2s 1;
     }
     @keyframes rotate{
      
@@ -352,7 +353,95 @@
   color: orange;
 }
 
-.fa:hover{
-  color: darkblue;
+.fa-thumbs-up:hover{
+  color:green;
   
 }
+
+.fa-thumbs-down:hover{
+  color:red;
+  
+}
+
+
+
+
+
+
+
+/* .switch {
+  position: relative;
+ 
+  width: 150px;
+  height: 25px;
+  text-align: left;
+ 
+  background:whitesmoke;
+
+  border-radius: 25px;
+}
+.switch span {
+  position: relative;
+  width: 20px;
+  height: 4px;
+ 
+  margin: -2px 0px 0px 0px;
+  background: #fff;
+  display: block;
+ 
+  transition: all 0.2s ease;
+}
+.switch span:after {
+  /* content: ""; */
+  display: block;
+  position: relative;
+  width: 4px;
+  height: 12px;
+  margin-top: -8px;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+input[type=radio] {
+  display: none;
+}
+.switch label {
+  cursor: pointer;
+  color: rgba(0,0,0,0.2);
+  width: 40px;
+  line-height: 10px;
+  transition: all 0.2s ease;
+}
+label[for=yes] {
+  position: relative;
+  left: 0px;
+  height: 10px;
+}
+label[for=no] {
+  position: relative;
+  right: 0px;
+}
+#no:checked ~ .switch {
+  background: none;
+}
+#no:checked ~ .switch span {
+  background: #fff;
+  margin-left: -8px;
+}
+#no:checked ~ .switch span:after {
+  background: #fff;
+  height: 20px;
+  margin-top: -8px;
+  margin-left: 8px;
+}
+#yes:checked ~ .switch label[for=yes] {
+  color:green;
+}
+#no:checked ~ .switch label[for=no] {
+  color:red;
+} */
+
+
+
+
+
+
