@@ -25,7 +25,7 @@ footer{
     position:fixed;
     bottom:0;
     z-index:100;
-    height:56px;
+    height:57px;
     background-color: #1b1c20;
     border-top: 1px solid rgb(95,95,95);
     border-right: 1px solid rgb(95,95,95);
@@ -38,28 +38,18 @@ footer .footer-text{
     margin:0 auto;
     color:white;
     text-align: center;
-    line-height: 56px;
+    line-height: 57px;
 }
 main{
     height:100%;
     overflow:hidden;
     margin-bottom:56px;
+    margin-top:60px;
 }
 body, main{
 	display: flex;
 	flex: 1 1 auto;
 	flex-direction: column;
-}
-
-#logo{
-    width:15%;
-    float:left;
-    height:56px;
-}
-#logo img{
-    height:56px;
-    float:right;
-    padding-right: 5px;
 }
 .nav-bar{
     background-color: #1b1c20;
@@ -92,11 +82,19 @@ body, main{
     text-align: center;
     padding:18px;
     text-decoration: none;
-    transition: background-color 300ms, font-size  300ms;
+    transition: background-color 600ms;
 }
 .nav-list-item a:hover{
     background-color: #f1f1f1;
-    color:black;    
+    color:black;
+}
+.nav-list-item a:focus{
+    box-shadow: 0 0 10pt 2pt red;
+    outline:none;
+}
+/* removes border when focus, on firefox */
+::-moz-focus-inner{
+    border:0;
 }
 .active a {
     background-color: rgb(95, 95, 95);
@@ -127,16 +125,13 @@ body, main{
     color:white;
     background-color: #1b1c20;
     border-left: 1px solid rgb(95, 95, 95);
-    padding:11px 15px;
+    padding:16px;
     position: absolute;
     right:0;
     top:0;
 }
-#hamburger-btn + label > div{
-    width:35px;
-    height:5px;
-    background-color: rgb(95, 95, 95);
-    margin:6px 0;
+.fa{
+    font-size:2em;
 }
 #hamburger-btn:checked ~ #mobile-links {
     display:block;
@@ -146,6 +141,9 @@ body, main{
         width: 100%;
         left:unset;
     }
+    main{
+        margin-top:65px;
+    }
     .nav-bar{
         display:none;
     }
@@ -153,15 +151,6 @@ body, main{
         display:block;
     }
 }
-@media (min-width:768px){
-    .mobile-nav-bar a{
-        font-size:2.4em;
-    }
-    #hamburger-btn + label{
-        padding:23px 30px;
-    }
-}
-
 @media only screen and (max-width:767px){
     header, footer{
         width: 100%;
