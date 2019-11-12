@@ -1,117 +1,4 @@
 
-  .container{
-    width: 70%;
-    border-left:  1px solid rgb(95, 95, 95);
-    border-right: 1px solid rgb(95, 95, 95);
-    left:15%;
-    top:0px;
-    height:200%;
-    position: absolute;
-    background-color: rgba(27, 28, 32,0.92);
- }
-  .ig {
-    float: right;
-    border-radius: 40px;
-    padding-left:12px;
-    height:450px;
-    width:50%;
-    opacity:0.5;
-    transition: opacity 600ms, transform 600ms;
-    padding-top: 18px;
-  }
-  .ig:hover{
-    opacity:1;
-    transform: scale(1.1);
-}
-
- .image{
-     padding-top: 50;
-     text-align: justify;
-     color:white;
- }
- .image h1{
-  font-size: 70px;
-  color:orangered;
-}
-     
- 
- .image p2{
-font-weight: normal;
-text-decoration: none;
-font-variant: normal;
-text-transform: none;
-color:white;
-font-family: inherit;
-font-size: 40px;
-
- }
-.image b{
-  color:maroon;
-}
-
- div.gallery {
-  margin: 5px;
-  border: 10px solid #ccc;
-  float: left;
-  width: 340px;
-  height: 450px;
-  
-}
-div.all-gallery{
-  padding-top: 50px;
-  object-fit: cover;
-}
-div.gallery:hover {
- 
-  opacity:1;
-  transform: scale(1.1);
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-  
-}
-
-div.desc {
-  padding: 40px;
-  text-align: center;
-  color:white;
-  
-   
-}
-.bt{
-  font-size: 30px;
-  color: blue;
-  background-color:maroon;
-}
-
-
-.vision {
-  font-size: 40px;
-  font-family: inherit;
-  font-weight: normal;
-  color:white;
-  text-align: center;
-  padding-top:530px;
-}
-.vision h2{
-  color:orangered;
-  font-size: 50px;
-}
-
- @media screen and (min-width: 600px) {
-  .vision {
-    font-size: 30px;
-  }
-
-  .image {
-    font-size: 30px;
-  }
-}
-
-
-
   /*om oss here */
 .container{
   width: 70%;
@@ -165,12 +52,12 @@ color:maroon;
 }
 /*gallery  here */
 .all_gallery{
-padding-top:35px;
+padding-top:30px;
 }
 div.gallery {
 border: 8px solid #ccc;
 float: left;
-width: 285px;
+width: 265px;
 height: 300px;
 }
 
@@ -186,12 +73,11 @@ height: auto;
 }
 
 div.desc {
-padding: 43px;
+padding: 28px;
 text-align: center;
 color:white;
 background-color: maroon;
 
-  
 }
 /*vision here */
 .vision{
@@ -213,35 +99,39 @@ text-align: center;
 /*animation slide here */
 
 @keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-}
-
-
-div#slider { 
-  overflow: hidden;
-  padding-top: 15px;
- }
-div#slider figure img { 
-  width: 20%;
-  float: left;
-}
-div#slider figure { 
-  position: relative;
-  width: 250%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 7s slidy infinite; 
-
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+  }
   
-}
+ 
+  div#slider { 
+    
+    background-color:rgba(27, 28, 32,0.92) ;
+   }
+  div#slider figure img {
+     width: 20%;
+     float: left;
+   }
+  div#slider figure { 
+    position: relative;
+    width: 500%;
+    height: 5%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 3s slidy infinite; 
+  }
+  
 
-
-/* STYLES SPECIFIC TO FOOTER  */
+/* footer start  */
 .color{
   background-color:rgba(27, 28, 32,0.92);;
 }
@@ -341,7 +231,7 @@ clear: both;
 }
 
 @media screen and (min-width: 600px) {
-.kund {
+.vision {
   font-size: 30px;
 }
 

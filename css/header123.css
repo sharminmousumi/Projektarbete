@@ -27,7 +27,17 @@ main{
     padding-right: 5px;
 }
 #hamburger-menu{
-    display:none;
+    width:15%;
+    float:right;
+    height:56px;
+}
+.icon{
+    height:20px;
+    color:white;
+    position: absolute;
+    top:0;
+    display:block;
+    right:0;
 }
 .nav-bar{
     background-color: #1b1c20;
@@ -36,6 +46,7 @@ main{
 }
 .nav-bar-menu{
     display:flex;
+    align-items: center;
     width:70%;
     font-size: 1.2em;
     list-style: none;
