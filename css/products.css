@@ -188,7 +188,58 @@
         100% {
           background-color:blue;
         }
-      }
+
+      } 
+
+ 
+
+    .container-item2>a{
+      word-spacing: 7em;
+      text-decoration: none;
+    }*/
+    .itemNamePrice{
+      position: relative;
+      margin-top: -15px;
+      height: 2em;
+      width: 100%;
+      float: center;
+      background-color: none;
+    }
+    
+    .itemNamePrice>div:first-child{
+      position: relative;
+      height: 2em;
+      width: 50%;
+      float:left;
+      /* background-color:white; */
+
+      /* background-color: #CD214B; */
+    }
+    .itemNamePrice>div:nth-child(2){
+      position: relative;
+      height: 2em;
+      width: 25%;
+      float: left;
+      background-color: none;
+      
+    }
+    .itemNamePrice >div:nth-child(3){
+      position: relative;
+      height: 2em;
+      width: 25%;
+      float: left;
+      background-color:white;
+    }
+
+     .shopinglogo{
+      
+      background:url(../img/shoping.png) no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+      position: relative;
+     
+    } 
 
     /* .container-item div:first-child {
     @keyframes stretch {
