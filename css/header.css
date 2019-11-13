@@ -20,24 +20,38 @@ header{
     z-index:100;
 }
 footer{
-    background-color: rgb(27, 28, 32);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em 0 3em;
+    background-color: rgb(27,28,32); /* The Fallback */
+    background-color: rgba(27, 28, 32,0.92);
     border-left: 1px solid rgb(95,95,95);
     border-right: 1px solid rgb(95,95,95);
     border-top: 1px solid rgb(95,95,95);
     bottom:0;
     height:57px;
     left:15%;
-    opacity: 0.92;
     position:fixed;
     width:70%;
     z-index:100;
 }
 footer .footer-text{
-    color:white;
-    line-height: 57px;
-    margin:0 auto;
-    text-align: center;
-    width:70%;
+    order:1;
+}
+footer .footer-text p{
+    color:rgb(187, 187, 187);
+}
+footer .social-media{
+    display:flex;
+    
+    justify-content: space-between;
+    width:30%;
+    order:2;
+}
+.social-media a i{
+    color:rgb(95, 95, 95);
+    font-size: 3em;
 }
 main{
     height:100%;
@@ -157,5 +171,14 @@ body, main{
     }
     .mobile-nav-bar{
         display:block;
+    }
+    footer{
+        justify-content: center;
+    }
+    footer .social-media{
+        display:none;
+    }
+    .social-media a{
+        display:none;
     }
 }
