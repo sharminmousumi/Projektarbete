@@ -1,50 +1,49 @@
   *{
-    margin:0;
     box-sizing: border-box;
+    margin:0;
     padding:0;
 }
 body{
+    background-attachment: fixed;
+    background-image:url(../img/messy-pizza-on-a-black-table.jpg);
+    background-position: center;
+    background-size: 100% 100%;
     height:100vh;
     width:100%;
-    background-image:url(../img/messy-pizza-on-a-black-table.jpg);
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-position: center;
 }
 header{
-    width:70%;
+    font-family:"Nunito";
     left:15%;
     position: fixed;
     top:0;
-    font-family:"Nunito";
+    width:70%;
     z-index:100;
 }
 footer{
-    width:70%;
-    left:15%;
-    position:fixed;
-    bottom:0;
-    z-index:100;
-    height:57px;
-    background-color: #1b1c20;
-    border-top: 1px solid rgb(95,95,95);
-    border-right: 1px solid rgb(95,95,95);
+    background-color: rgb(27, 28, 32);
     border-left: 1px solid rgb(95,95,95);
+    border-right: 1px solid rgb(95,95,95);
+    border-top: 1px solid rgb(95,95,95);
+    bottom:0;
+    height:57px;
+    left:15%;
     opacity: 0.92;
-
+    position:fixed;
+    width:70%;
+    z-index:100;
 }
 footer .footer-text{
-    width:70%;
-    margin:0 auto;
     color:white;
-    text-align: center;
     line-height: 57px;
+    margin:0 auto;
+    text-align: center;
+    width:70%;
 }
 main{
     height:100%;
-    overflow:hidden;
     margin-bottom:56px;
     margin-top:60px;
+    overflow:hidden;
 }
 body, main{
 	display: flex;
@@ -53,34 +52,34 @@ body, main{
 }
 .nav-bar{
     background-color: #1b1c20;
-    opacity:0.92;
+    border-bottom:1px solid rgb(95, 95, 95);
     font-size: 14px;
     font-weight: 500;
-    border-bottom:1px solid rgb(95, 95, 95);
+    opacity:0.92;
 }
 .nav-bar-menu{
-    display:flex;
     align-items: center;
-    width:100%;
-    font-size: 1.2em;
-    list-style: none;
     border-left: 1px solid rgb(95, 95, 95);
     border-right: 1px solid rgb(95, 95, 95);
+    display:flex;
+    font-size: 1.2em;
+    list-style: none;
+    width:100%;
 }
 .nav-list-item{
+    border-right: 1px solid rgb(95, 95, 95);
     flex:1;
     flex-basis:10%;
     text-align: center;
-    border-right: 1px solid rgb(95, 95, 95);
 }
 .nav-list-item:nth-child(4){
     border-right: 0;
 }
 .nav-list-item a{
-    display:block;
     color: white;
-    text-align: center;
+    display:block;
     padding:18px;
+    text-align: center;
     text-decoration: none;
     transition: background-color 600ms;
 }
@@ -92,20 +91,16 @@ body, main{
     box-shadow: 0 0 10pt 2pt red;
     outline:none;
 }
-/* removes border when focus, on firefox */
-::-moz-focus-inner{
-    border:0;
-}
 .active a {
     background-color: rgb(95, 95, 95);
     color:white;
 }
 .mobile-nav-bar{
+    background-color: #1b1c20;
+    border-bottom: 1px solid rgb(95, 95, 95);
     display:none;
     overflow:hidden;
-    background-color: #1b1c20;
     position: relative;
-    border-bottom: 1px solid rgb(95, 95, 95);
 }
 .mobile-nav-bar #mobile-links{
     display:none;
@@ -113,18 +108,19 @@ body, main{
 .mobile-nav-bar a{
     border-top: 1px solid rgb(95, 95, 95);
     color:white;
+    display:block;
+    font-size: 17px;
     padding:20px 24px;
     text-decoration: none;
-    font-size: 17px;
-    display:block;
+    
 }
 #hamburger-btn{
     display:none;
 }
 #hamburger-btn + label{
-    color:white;
     background-color: #1b1c20;
     border-left: 1px solid rgb(95, 95, 95);
+    color:white;
     padding:16px;
     position: absolute;
     right:0;
@@ -138,8 +134,8 @@ body, main{
 }
 @media only screen and (max-width:1024px){
     header, footer{
-        width: 100%;
         left:unset;
+        width: 100%;
     }
     main{
         margin-top:65px;
@@ -153,8 +149,8 @@ body, main{
 }
 @media only screen and (max-width:767px){
     header, footer{
-        width: 100%;
         left:unset;
+        width: 100%;
     }
     .nav-bar{
         display:none;
