@@ -10,8 +10,6 @@
     margin-top:57px;
     bottom: 57px;
     overflow-y:scroll;
-    
-   
   }
 
  /*så att de båda rutorna går ihop, annars blir det ett mellanrum*/
@@ -19,6 +17,9 @@
     padding:1em;
    
   }
+
+  /* Rubriken högst på sidan, utanför wrapper */
+  
   .container h1, .container h2{
       text-align:center;
       color:white;
@@ -40,8 +41,13 @@
 .company-name-color {
   color:orange;
 }
-   
-.wrapper{
+
+  
+  
+ 
+/*Kontaktformulär-containern till hela formuläret */
+
+  .wrapper{
     max-width:80%;
     margin-left:auto;
     margin-right:auto;
@@ -51,15 +57,27 @@
   font-family:"Roboto mono";
   }
 
+/* kontaktformulär rutan med företagsuppgifterna */
+
   .company-info{
      /* background-color:rgb(95, 95, 95);  */
      background:url("../img/codingbackground.jpg"); 
     /* box-shadow:10px 10px 10px black; */
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center; 
-    z-index: 100;
+    background-size:cover;                    
+    background-repeat:no-repeat;
+    background-position:center center; 
+    /* z-index: 2; */ /*ifall jag vill ha en border*/
   }
+  .company-info> h2{
+    margin-left:2px;
+  }
+  .material-icons{
+    margin-right:10px;
+  }
+  
+  #material-icon-noshow{
+      visibility:hidden;
+    }
   
   ul{
     list-style:none;
@@ -67,15 +85,16 @@
     text-align:center;
 }
 
+/* kontaktformulär delen med textrutorna */
  
-  /*kontaktformuläret*/
-  .form-box form{
+ 
+ .form-box form{
     margin:0.5em;
     display:grid;
     grid-template-columns:1fr 1fr;
-   grid-row-gap:20px;
-   grid-column-gap:2.5em;
-    }
+   row-gap:20px;
+   column-gap:2.5em;
+  }
   
   .form-box {
     background-color:rgb(148, 145, 145);
@@ -100,22 +119,141 @@ form input, form textarea{
   /* Styr textruta och submitknappen*/
   .full{
     grid-column:1/3;
+   
+    
   }
-  .button {
-      background-color:#CD214B;
-      border:none;
-      transition: background-color 0.8s;
-      border-radius: 4px;
-      color:white;
-      box-shadow:5px 5px 2px dimgray;
+   
+/*Modal-popuprutan---------------------------------*/
+   
+
+  .modal{
+    background-color:rgba(0,0,0,0.8); 
+    width:70%;
+    height:100vh;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index:10;
+    opacity:0;
+    visibility:hidden;
+    transition:all .5s;
+  }  
+  .modal-container{
+    max-width:500px;
+    padding:1em;
+    background-color:white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    border:5px solid grey;
+    display:flex;
+    flex-direction:column;
+    margin-left:auto;
+    margin-right:auto;
+    opacity:0;
+    visibility:hidden;
+    transition:all .5s; 
+    z-index:11;
+    
   }
-  .button:hover{
-background-color:orange;
-cursor: pointer;
+  
+  #modal:target{
+    opacity:1;
+    visibility:visible;
   }
+  
+  #modal:target .modal-container{
+    opacity:1;
+    visibility:visible;
+  }
+  
+ 
+  .modal-open{
+    text-decoration:none;
+    color:white;
+    text-align:center;
+    border:1px solid rgb(92, 91, 91);
+    width:40em;
+    padding:0.5em;
+    margin-top:2em;
+    border-radius:4px;
+    box-shadow:5px 5px 2px dimgray;
+    background-color:orange;
+    transition: background-color 0.8s;
+    
+  }
+  .modal-open-container{
+  grid-column:1/3;
+  display:flex;
+  justify-content:center;
+    
+  }
+  .modal-open:hover{
+    background-color:#CD214B;
+    cursor: pointer;
+  }
+  
+ 
+  
+  .modal-container h1{
+   text-align:center;
+ color:black;
+ margin-bottom:1em;
+ font-family:"inconsolata";
+  }
+  .modal-streck{
+    border:1px solid orange;
+    margin-bottom:1.5em;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .modal-container p{
+   text-align:center;
+   font-family:"Roboto mono";
+   margin-top:0.5em;
+ 
+  }
+  
+  .modal-close-x{
+   color:black;
+    text-decoration:none;
+    font-size:2em;
+    margin-bottom:0.5em;
+  }
+  .close-button{
+  border-radius:0.5em;
+    padding:0.5em;
+    margin:0.5em;
+    margin-top:1em;
+    width:5em;
+   
+  }
+  .close-button:hover{
+    cursor: pointer;
+  }
+  
+  .modal-close-button{
+   display:flex;
+    justify-content:flex-end;
+    text-decoration:none;
+  }
+  
+  .modal-container a{
+    display:flex;
+    justify-content:flex-end;
+    margin-right:0.5em;
+    margin-top:0.3em;
+    
+  }
+  
+ 
  
 
-  /* Klagomålsgrid */
+  
+/* Klagomålsgrid */
 
 .complain-box{
     
@@ -123,9 +261,8 @@ cursor: pointer;
     margin-left: auto;
     margin-right:auto;
     margin-bottom:4em;
-    padding:0em;/*kan inte ha padding och box-shadow*/
-    margin-top:1.5em;
-    margin-bottom:1.5em;
+    padding:0em;
+    margin-top:3em;
     color:white;
     box-shadow:10px 10px 5px black;
     display:grid;
@@ -135,8 +272,8 @@ cursor: pointer;
     /* background-color:rgb(95, 95, 95); */
     background:url("../img/codingbackground.jpg"); 
     /* box-shadow:10px 10px 10px black; */
-    background-size:     cover;                    
-    background-position: center center; 
+    background-size:cover;                    
+    background-position:center center; 
     text-align:center;
     padding:2em;
     font-family:"Inconsolata"
@@ -146,9 +283,7 @@ cursor: pointer;
     margin-top:1em;
     padding:1em;
   }
-.complain-img{
-  background-color:white;/*finns det nåt annat sätt att lösa problemet på, hur centrerar man bilden?*/
-}
+
 .complain-box img {
   width:100%;  
   height:auto;
@@ -157,18 +292,14 @@ cursor: pointer;
 
 @media (max-width:500px){
   .form-box>form{
-   
-    display:flex;
+   display:flex;
     flex-direction: column;
   }
 .form-box form input, .full{
- 
-  margin:0.2em;
+margin:0.2em;
 }  
 
 }
-
-
 
 @media (min-width:1024px)
 {
@@ -178,12 +309,14 @@ cursor: pointer;
     }
     .company-info h2, .company-info ul{
         text-align:left;
-      
         margin-top:1em;
     }
     .complain-box{
         display:grid;
         grid-template-columns:2fr 1fr;
+    }
+    .modal-open{
+      margin-top:0;
     }
 }
 
