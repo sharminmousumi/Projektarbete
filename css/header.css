@@ -117,7 +117,7 @@ body, main{
 #hamburger-btn{
     display:none;
 }
-#hamburger-btn + label{
+#hamburger-btn + .btn{
     background-color: #1b1c20;
     border-left: 1px solid rgb(95, 95, 95);
     color:white;
@@ -126,7 +126,7 @@ body, main{
     right:0;
     top:0;
 }
-.fa{
+.fa-bars{
     font-size:2em;
 }
 #hamburger-btn:checked ~ #mobile-links {
