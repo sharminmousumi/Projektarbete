@@ -7,8 +7,6 @@
     background-color: rgba(27, 28, 32,0.92);
     height:100%;
     margin: 0 auto;
-    margin-top:57px;
-    bottom: 57px;
     overflow-y:scroll;
   }
 
@@ -83,7 +81,7 @@
   form{
       margin-top:1em;
   }
-  label{
+  .form-label{
     display:block;
     font-size:1.2em;
     margin-bottom:0.2em;
@@ -173,3 +171,4 @@ cursor: pointer;
       width:100%;
       left:unset;
   }
+}
