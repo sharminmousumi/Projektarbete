@@ -60,13 +60,13 @@
 /* kontaktformulär rutan med företagsuppgifterna */
 
   .company-info{
-     /* background-color:rgb(95, 95, 95);  */
+     
      background:url("../img/codingbackground.jpg"); 
-    /* box-shadow:10px 10px 10px black; */
+   
     background-size:cover;                    
     background-repeat:no-repeat;
     background-position:center center; 
-    /* z-index: 2; */ /*ifall jag vill ha en border*/
+   
   }
   .company-info> h2{
     margin-left:2px;
@@ -109,7 +109,7 @@ form input, form textarea{
   form{
       margin-top:1em;
   }
-  label{
+  .form-label{
     display:block;
     font-size:1.2em;
     margin-bottom:0.2em;
@@ -274,9 +274,9 @@ form input, form textarea{
     grid-template-columns:1fr;
 }
 .complain-text{
-    /* background-color:rgb(95, 95, 95); */
+   
     background:url("../img/codingbackground.jpg"); 
-    /* box-shadow:10px 10px 10px black; */
+  
     background-size:cover;                    
     background-position:center center; 
     text-align:center;
