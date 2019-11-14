@@ -9,6 +9,11 @@
    
   }
   
+  .footer-text>p{
+    color:white;
+
+  opacity: 1;
+  }
   
   
   .row {
@@ -392,7 +397,7 @@
   transition: all 0.2s ease;
 }
 .switch span:after {
-  /* content: ""; */
+  content: ""; 
   display: block;
   position: relative;
   width: 4px;
