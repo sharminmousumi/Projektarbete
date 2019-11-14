@@ -1,231 +1,190 @@
-body {
-    background-color:black;
-  }
- 
-  .ig {
-    float: right;
-    border-radius: 40px;
-    padding-left:12px;
-    height:450px;
-    width:50%;
-    opacity:0.5;
-    transition: opacity 600ms, transform 600ms;
-    
-  }
-  .ig:hover{
-    opacity:1;
-    transform: scale(1.1);
+ /*om oss here */
+ .container{
+  width: 70%;
+  border-left:  1px solid rgb(95, 95, 95);
+  border-right: 1px solid rgb(95, 95, 95);
+  left:15%;
+  top:60px;
+  height:200%;
+  position: absolute;
+  background-color: rgba(27, 28, 32,0.92);
 }
-
- .image{
-     padding: 70px;
-     text-align: justify;
-     color:white;
- }
- .image h1{
-  font-size: 50px;
+.ig {
+  float: right;
+  border-radius: 40px;
+  height:440px;
+  width:50%;
+  opacity:0.5;
+  transition: opacity 600ms, transform 600ms;
+  padding-top: 5px;
+  padding-left: 8px;
+  
 }
-     
- 
- .image p2{
-font-weight: normal;
-text-decoration: none;
-font-variant: normal;
-text-transform: none;
-color:white;
-font-style: oblique;
-font-size: 38px;
-
- }
- 
- div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 450px;
-  height: 450px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
+.ig:hover{
   opacity:1;
   transform: scale(1.1);
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 40px;
-  text-align: center;
-  color:white;
+.image{
   
+   text-align: justify;
+   color:white;
+}
+.image h1{
+font-size: 60px;
+color:orangered;
+}
    
-}
-.bt{
-  font-size: 30px;
-  color: blue;
-  background-color:maroon;
-}
 
-div.all-gallery{
-  padding-left: 70px;
-  padding-right: 70px;
- 
-}
-
-
- .kund {
-  font-size: 29px;
-  font-style:oblique;
-  padding:50px;
-  font-weight: normal;
-color:white;
-text-align: center;
-
- }
- @media screen and (min-width: 600px) {
-    .kund {
-      font-size: 30px;
-    }
-  }
-  @media screen and (min-width: 600px) {
-    .image {
-      font-size: 30px;
-    }
-  }
-
-  .container{
-    width: 70%;
-    border-left:  1px solid rgb(95, 95, 95);
-    border-right: 1px solid rgb(95, 95, 95);
-    height:200%;
-    overflow-y:scroll;
-    background-color: rgba(27, 28, 32,0.92);
-    margin: 0 auto;
-    margin-top:57px;
-    bottom: 57px;
- }
-  .ig {
-    float: right;
-    border-radius: 40px;
-    padding-left:12px;
-    height:450px;
-    width:50%;
-    opacity:0.5;
-    transition: opacity 600ms, transform 600ms;
-    padding-top: 18px;
-  }
-  .ig:hover{
-    opacity:1;
-    transform: scale(1.1);
-}
-
- .image{
-     padding-top: 50;
-     text-align: justify;
-     color:white;
- }
- .image h1{
-  font-size: 70px;
-  color:orangered;
-}
-     
- 
- .image p2{
+.image p2{
 font-weight: normal;
 text-decoration: none;
 font-variant: normal;
 text-transform: none;
 color:white;
-font-style: oblique;
-font-size: 40px;
+font-family: inherit;
+font-size: 30px;
 
- }
+}
 .image b{
-  color:maroon;
+color:maroon;
+}
+/*gallery  here */
+.all_gallery{
+padding-top:30px;
+}
+div.gallery {
+border: 8px solid #ccc;
+float: left;
+width: 265px;
+height: 300px;
 }
 
- div.gallery {
-  margin: 5px;
-  border: 10px solid #ccc;
-  float: left;
-  width: 340px;
-  height: 450px;
-  
-}
-div.all-gallery{
-  padding-top: 50px;
-  object-fit: cover;
-}
 div.gallery:hover {
- 
-  opacity:1;
-  transform: scale(1.1);
+opacity:1;
+transform: scale(1.1);
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
-  
+width: 100%;
+height: auto;
+
 }
 
 div.desc {
-  padding: 40px;
-  text-align: center;
-  color:white;
-  
-   
-}
-.bt{
-  font-size: 30px;
-  color: blue;
-  background-color:maroon;
-}
-
-
-.kund {
-  font-size: 40px;
-  font-style:oblique;
-  font-weight: normal;
-  color:white;
-  text-align: center;
-  padding-top:530px;
-}
-.kund h2{
-  color:orangered;
-  font-size: 70px;
-}
-.kund b{
-  color:maroon;
-}
- .tid{
-color:white;
-font-size: 40px;
-font-style: oblique;
+padding: 28px;
 text-align: center;
-padding-top: 70px;
- }
- .tid h3{
-   color:orangered;
-   font-size: 70px;
- }
- .tid h4{
-   color:orangered;
-   font-size: 70px;
- }
- @media screen and (min-width: 600px) {
-  .kund {
-    font-size: 30px;
-  }
+color:white;
+background-color: maroon;
 
-  .image {
-    font-size: 30px;
-  }
 }
 
 
+/*vision here */
+.vision{
+font-size: 30px;
+font-family: inherit;
+font-weight: normal;
+color:white;
+text-align: justify;
+padding-top:330px;
+padding-left: 5px;
+padding-right: 5px;
+}
+.vision h2{
+color:orangered;
+font-size: 50px;
+text-align: center;
+}
 
+/*animation slide here */
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+
+  }
   
+ 
+  div#slider { 
+    overflow: hidden;
+    background-color:rgba(27, 28, 32,0.92) ;
+    padding-top: 25px;
+    padding-bottom:4em;
+   }
+  div#slider figure img {
+     width: 10%;
+     float: left;
+   }
+  div#slider figure { 
+    position: relative;
+    width: 500%;
+    height: 200px;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 5s slidy infinite; 
+  }
+  
+div.slider:hover{
+  opacity:1;
+transform: scale(1.1);
+}
+.clearfix {
+clear: both;
+}
+@media only screen and (min-width: 1280px) {
+.contain {
+  width: 1200px;
+  margin: 0 auto;
+}
+}
+@media only screen and (max-width: 1139px) {
+.contain .social {
+  width: 1000px;
+  display: block;
+}
+.social h1 {
+  margin: 0px;
+}
+}
+@media only screen and (max-width: 950px) {
+.footer .col {
+  width: 33%;
+}
+.footer .col h1 {
+  font-size: 14px;
+}
+.footer .col ul li {
+  font-size: 13px;
+}
+}
+@media only screen and (max-width: 500px) {
+  .footer .col {
+    width: 50%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 340px) {
+.footer .col {
+  width: 100%;
+}
+}
+
+@media screen and (min-width: 600px) {
+.vision {
+  font-size: 30px;
+}
+
+.image {
+  font-size: 30px;
+}
+}
