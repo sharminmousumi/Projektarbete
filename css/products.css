@@ -27,20 +27,20 @@ opacity: 1;
       margin:0 auto;
       display:grid;
       grid-template-rows: auto;
-      grid-template-columns: 1fr 1fr 1fr  ;
+      grid-template-columns: 1fr 1fr 1fr;
       color:white;
       overflow-y:scroll;
       background-color: rgba(27, 28, 32,0.92);
 
   }
   .container-item {
-      border: 1px solid white;
+      border: 1px lightgrey;
       display:flex;
       justify-content: center;
       flex-direction: column;
       padding:1em;
       margin:1em;
-      height: 20em;
+      height: 21em;
       background-color:white;
 
   }
@@ -209,8 +209,8 @@ opacity: 1;
     margin-top: -15px;
     height: 2em;
     width: 100%;
-    float: center;
-    background-color: none;
+    
+   
   }
   
   .itemNamePrice>div:first-child{
@@ -227,7 +227,7 @@ opacity: 1;
     height: 2em;
     width: 25%;
     float: left;
-    background-color: none;
+   
     
   }
   .itemNamePrice >div:nth-child(3){
@@ -254,14 +254,14 @@ opacity: 1;
   .container-item2>a{
     word-spacing: 7em;
     text-decoration: none;
-  }*/
+  }
   .itemNamePrice{
     position: relative;
     margin-top: -15px;
     height: 3em;
     width: 100%;
-    float: center;
-    background-color: none;
+    
+ 
   }
   
   .itemNamePrice>div:first-child{
@@ -277,14 +277,13 @@ opacity: 1;
     height: 3em;
     width: 25%;
     float: left;
-    background-color: none;
+  
     
   }
   .itemNamePrice >div:nth-child(3){
     position: relative;
     height: 3em;
     width: 25%;
-    float: left;
     background-color:white;
   }
 
@@ -348,6 +347,7 @@ opacity: 1;
 } */
 }
 .fa{
+
 font-size: 50px;
 color: orange;
 }
