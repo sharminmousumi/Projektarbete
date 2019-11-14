@@ -44,7 +44,6 @@ footer .footer-text p{
 }
 footer .social-media{
     display:flex;
-    
     justify-content: space-between;
     width:30%;
     order:2;
@@ -52,7 +51,13 @@ footer .social-media{
 .social-media a i{
     color:rgb(95, 95, 95);
     font-size: 3em;
+    transition: color 600ms;
+
 }
+.social-media a:hover i{
+    color:white;
+}
+
 main{
     height:100%;
     margin-bottom:56px;
@@ -126,7 +131,6 @@ body, main{
     font-size: 17px;
     padding:20px 24px;
     text-decoration: none;
-    
 }
 #hamburger-btn{
     display:none;
