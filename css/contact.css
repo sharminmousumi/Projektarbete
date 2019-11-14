@@ -7,8 +7,6 @@
     background-color: rgba(27, 28, 32,0.92);
     height:100%;
     margin: 0 auto;
-    margin-top:57px;
-    bottom: 57px;
     overflow-y:scroll;
   }
 
@@ -111,7 +109,7 @@ form input, form textarea{
   form{
       margin-top:1em;
   }
-  label{
+  .form-label{
     display:block;
     font-size:1.2em;
     margin-bottom:0.2em;
@@ -340,6 +338,9 @@ margin:0.2em;
       left:unset;
   }
 }
+<<<<<<< HEAD
 
 
   
+=======
+>>>>>>> 335eb94b73f3d61c06f7383222b0a325926ed8cb
