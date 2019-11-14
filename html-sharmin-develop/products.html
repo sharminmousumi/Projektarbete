@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/products.css">
+    <title>Products</title>
+    <style>
+        .container{
+            width: 70%;
+            border-left:  1px solid rgb(95, 95, 95);
+            border-right: 1px solid rgb(95, 95, 95);
+            left:15%;
+            height:100%;
+            position: absolute; 
+            display:grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr ;
+            color:white;
+            padding-left: 3em;
+            padding-right:3em;
+            background-color: #1b1c20;
+            opacity:0.92;
+        }
+        .container-item {
+            border: 1px solid white;
+            display:flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding:1em;
+            margin:1em;
+
+        }
+        .container-item div{
+            border: 1px solid red;
+            align-content:space-around;
+
+        }
+        .container-item div:first-child{
+            margin-bottom: 20px;
+            flex:2;
+            background-image:url(../img/pizza-3007395_960_720.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .container-item div:nth-child(2){
+            flex:1;
+            border:1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul class="nav-bar-menu">
+                <li class="nav-list-item"><a href="index.html">Home</a></li>
+                <li class="nav-list-item active"><a href="products.html">Products</a></li>
+                <li class="nav-list-item"><a href="about.html">About</a></li>
+                <li class="nav-list-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav-bar">   
+            <a href="index.html">Home</a>
+            <input type="checkbox" id="hamburger-btn"/>
+            <label class="btn" for="hamburger-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <div id="mobile-links">
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container-item">
+                <div></div>
+                <div> This is one of our specialties</div>
+            </div>
+            <div class="container-item">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="container-item">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="container-item">
+                <div></div>
+                <div></div>
+            </div >
+            <div class="container-item">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="container-item">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="container-item">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="container-item">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="container-item">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="container-item">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="container-item">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="container-item">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="container-item">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="container-item">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="container-item">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+
+        </div>
+    </main>
+</body>
+</html>
