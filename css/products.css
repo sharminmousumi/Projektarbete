@@ -233,13 +233,14 @@
       float: left;
       background-color: none;
       
+      
     }
     .itemNamePrice >div:nth-child(3){
       position: relative;
       height: 2em;
       width: 25%;
       float: left;
-      background-color:white;
+      color:white;
     }
 
      .shopinglogo{
@@ -288,7 +289,8 @@
       height: 3em;
       width: 25%;
       float: left;
-      background-color:white;
+      background-color: none;
+      color: black;
     }
 
      .shopinglogo{
