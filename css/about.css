@@ -1,224 +1,190 @@
-.dropbtn {
-    background-color:#a7cfdf ;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    float:right;
-    
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-  }
-  body {
-    background-color:whitesmoke;
-  }
- 
-  img {
-    float: right;
-    border-radius: 20px;
-    width: 600px;
-    height: 400px;
-    clear: right;
-    padding-top:6px;
-    padding-left:8px;
-  }
-  
- 
- .image{
-     padding:30px;
-     margin-left: 40px;
-     text-align: justify;
-     
-     
- }
- .image p2{
-font-weight: normal;
-text-decoration: none;
-font-style: normal;
-font-variant: normal;
-text-transform: none;
-color:#002233;
-
- }
- 
- .kund {
-     color:#002233;
-     padding-top: 10px;
-     padding-left:65px;
-     padding-right:50px;
-     text-align: justify;
-     
- }
- @media screen and (min-width: 600px) {
-    .kund {
-      font-size: 30px;
-    }
-  }
-  @media screen and (min-width: 600px) {
-    .image {
-      font-size: 30px;
-    }
-  }
-
-  .container{
-    width: 70%;
-    border-left:  1px solid rgb(95, 95, 95);
-    border-right: 1px solid rgb(95, 95, 95);
-    height:200%;
-    overflow-y:scroll;
-    background-color: rgba(27, 28, 32,0.92);
-    margin: 0 auto;
-
- }
-  .ig {
-    float: right;
-    border-radius: 40px;
-    padding-left:12px;
-    height:450px;
-    width:50%;
-    opacity:0.5;
-    transition: opacity 600ms, transform 600ms;
-    padding-top: 18px;
-  }
-  .ig:hover{
-    opacity:1;
-    transform: scale(1.1);
+ /*om oss here */
+ .container{
+  width: 70%;
+  border-left:  1px solid rgb(95, 95, 95);
+  border-right: 1px solid rgb(95, 95, 95);
+  left:15%;
+  top:60px;
+  height:200%;
+  position: absolute;
+  background-color: rgba(27, 28, 32,0.92);
 }
-
- .image{
-     padding-top: 50;
-     text-align: justify;
-     color:white;
- }
- .image h1{
-  font-size: 70px;
-  color:orangered;
-}
-     
- 
- .image p2{
-font-weight: normal;
-text-decoration: none;
-font-variant: normal;
-text-transform: none;
-color:white;
-font-style: oblique;
-font-size: 40px;
-
- }
-.image b{
-  color:maroon;
-}
-
- div.gallery {
-  margin: 5px;
-  border: 10px solid #ccc;
-  float: left;
-  width: 340px;
-  height: 450px;
+.ig {
+  float: right;
+  border-radius: 40px;
+  height:440px;
+  width:50%;
+  opacity:0.5;
+  transition: opacity 600ms, transform 600ms;
+  padding-top: 5px;
+  padding-left: 8px;
   
 }
-div.all-gallery{
-  padding-top: 50px;
-  object-fit: cover;
-}
-div.gallery:hover {
- 
+.ig:hover{
   opacity:1;
   transform: scale(1.1);
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
+.image{
   
+   text-align: justify;
+   color:white;
+}
+.image h1{
+font-size: 60px;
+color:orangered;
+}
+   
+
+.image p2{
+font-weight: normal;
+text-decoration: none;
+font-variant: normal;
+text-transform: none;
+color:white;
+font-family: inherit;
+font-size: 30px;
+
+}
+.image b{
+color:maroon;
+}
+/*gallery  here */
+.all_gallery{
+padding-top:30px;
+}
+div.gallery {
+border: 8px solid #ccc;
+float: left;
+width: 265px;
+height: 300px;
+}
+
+div.gallery:hover {
+opacity:1;
+transform: scale(1.1);
+}
+
+div.gallery img {
+width: 100%;
+height: auto;
+
 }
 
 div.desc {
-  padding: 40px;
-  text-align: center;
-  color:white;
-  
-   
-}
-.bt{
-  font-size: 30px;
-  color: blue;
-  background-color:maroon;
-}
-
-
-.kund {
-  font-size: 40px;
-  font-style:oblique;
-  font-weight: normal;
-  color:white;
-  text-align: center;
-  padding-top:530px;
-}
-.kund h2{
-  color:orangered;
-  font-size: 70px;
-}
-.kund b{
-  color:maroon;
-}
- .tid{
-color:white;
-font-size: 40px;
-font-style: oblique;
+padding: 28px;
 text-align: center;
-padding-top: 70px;
- }
- .tid h3{
-   color:orangered;
-   font-size: 70px;
- }
- .tid h4{
-   color:orangered;
-   font-size: 70px;
- }
- @media screen and (min-width: 600px) {
-  .kund {
-    font-size: 30px;
-  }
+color:white;
+background-color: maroon;
 
-  .image {
-    font-size: 30px;
-  }
 }
 
 
+/*vision here */
+.vision{
+font-size: 30px;
+font-family: inherit;
+font-weight: normal;
+color:white;
+text-align: justify;
+padding-top:330px;
+padding-left: 5px;
+padding-right: 5px;
+}
+.vision h2{
+color:orangered;
+font-size: 50px;
+text-align: center;
+}
 
+/*animation slide here */
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+
+  }
   
+ 
+  div#slider { 
+    overflow: hidden;
+    background-color:rgba(27, 28, 32,0.92) ;
+    padding-top: 25px;
+    padding-bottom:4em;
+   }
+  div#slider figure img {
+     width: 10%;
+     float: left;
+   }
+  div#slider figure { 
+    position: relative;
+    width: 500%;
+    height: 200px;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 5s slidy infinite; 
+  }
+  
+div.slider:hover{
+  opacity:1;
+transform: scale(1.1);
+}
+.clearfix {
+clear: both;
+}
+@media only screen and (min-width: 1280px) {
+.contain {
+  width: 1200px;
+  margin: 0 auto;
+}
+}
+@media only screen and (max-width: 1139px) {
+.contain .social {
+  width: 1000px;
+  display: block;
+}
+.social h1 {
+  margin: 0px;
+}
+}
+@media only screen and (max-width: 950px) {
+.footer .col {
+  width: 33%;
+}
+.footer .col h1 {
+  font-size: 14px;
+}
+.footer .col ul li {
+  font-size: 13px;
+}
+}
+@media only screen and (max-width: 500px) {
+  .footer .col {
+    width: 50%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 340px) {
+.footer .col {
+  width: 100%;
+}
+}
+
+@media screen and (min-width: 600px) {
+.vision {
+  font-size: 30px;
+}
+
+.image {
+  font-size: 30px;
+}
+}
