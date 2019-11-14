@@ -15,7 +15,7 @@
 }
 .gallery{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width:100%;
     margin:2em 0 2em 0;
     flex-wrap: wrap;
@@ -41,14 +41,14 @@
 }
 .index-text h1{
     margin-bottom: 1em;
-    font-size: 2em;
+    font-size: 3em;
     color:white;
-    font-family:"Nunito";
+    font-family:"Inconsolata";
 }
 .index-text p{
     font-size: 1.2em;
     color:white;
-    font-family:"Nunito";
+    font-family:"Roboto mono";
 }
 .index-text h1 strong{
     color:orange;

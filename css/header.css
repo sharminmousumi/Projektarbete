@@ -12,7 +12,7 @@ body{
     width:100%;
 }
 header{
-    font-family:"Nunito";
+    font-family:"Roboto mono";
     left:15%;
     position: fixed;
     top:0;
@@ -57,7 +57,12 @@ footer .social-media{
 .social-media a:hover i{
     color:white;
 }
-
+.social-media a:focus{
+    outline-width: 0;
+}
+.social-media a:focus i{
+    color:white;
+}
 main{
     height:100%;
     margin-bottom:56px;
