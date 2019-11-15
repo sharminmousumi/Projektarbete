@@ -274,14 +274,16 @@ form input, form textarea{
     grid-template-columns:1fr;
 }
 .complain-text{
-    /* background-color:rgb(95, 95, 95); */
     background:url("../img/codingbackground.jpg"); 
-    /* box-shadow:10px 10px 10px black; */
-    background-size:cover;                    
+  background-size:cover;                    
     background-position:center center; 
     text-align:center;
     padding:2em;
-    font-family:"Inconsolata"
+    font-family:"Inconsolata";
+    
+  }
+  .complain-text h2, .complain-text p{
+    margin-top:2em;
   }
   .complain-text p{
     font-family:"Roboto mono";
@@ -293,7 +295,6 @@ form input, form textarea{
   width:100%;  
   height:auto;
 }
-
 
 @media (max-width:500px){
   .form-box>form{
